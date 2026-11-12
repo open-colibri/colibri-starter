@@ -115,9 +115,9 @@ run `castor up` from a worktree checked out before this setup existed without up
 
 ## Documentation website
 
-The `docs/` pages are published by the sylius-starter/docs Starlight website, cloned next to the main checkout
+The `docs/` pages are published by the the-swan-foundation/the-swan-starter-docs Starlight website, cloned next to the main checkout
 (`DOCS_SITE_DIR` otherwise). Preview the `docs/` of the current checkout or worktree with `castor docs:up`
-(http://localhost:4321/docs/, `--port` to change it) and stop it with `castor docs:stop`. One server runs at a time.
+(http://localhost:4321/the-swan-starter-docs/, `--port` to change it) and stop it with `castor docs:stop`. One server runs at a time.
 See `docs/contributing/documentation.md`.
 
 ## Running commands in the Sylius app

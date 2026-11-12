@@ -164,7 +164,7 @@ function docs_up(
     $site = docs_site();
 
     if (!is_dir($site)) {
-        io()->error(sprintf('The documentation website is not in %s. Clone it with "git clone git@github.com:sylius-starter/docs.git %s", or set DOCS_SITE_DIR.', $site, $site));
+        io()->error(sprintf('The documentation website is not in %s. Clone it with "git clone git@github.com:the-swan-foundation/the-swan-starter-docs.git %s", or set DOCS_SITE_DIR.', $site, $site));
 
         return 1;
     }
@@ -179,7 +179,7 @@ function docs_up(
     run(['npx', 'astro', 'dev', 'stop'], context: $context->withAllowFailure()->withQuiet());
     run(['npx', 'astro', 'dev', '--background', '--port', (string) $port], context: $context->withEnvironment(['DOCS_DIR' => __DIR__ . '/docs']));
 
-    io()->success(sprintf('The documentation of %s is served on http://localhost:%d/docs/ and follows its changes. Run "castor docs:stop" to stop it.', __DIR__, $port));
+    io()->success(sprintf('The documentation of %s is served on http://localhost:%d/the-swan-starter-docs/ and follows its changes. Run "castor docs:stop" to stop it.', __DIR__, $port));
 
     return 0;
 }
@@ -197,7 +197,7 @@ function docs_stop(): int
 }
 
 /**
- * The sylius-starter/docs repository, cloned next to the main checkout unless DOCS_SITE_DIR says otherwise.
+ * The the-swan-foundation/the-swan-starter-docs repository, cloned next to the main checkout unless DOCS_SITE_DIR says otherwise.
  */
 function docs_site(): string
 {

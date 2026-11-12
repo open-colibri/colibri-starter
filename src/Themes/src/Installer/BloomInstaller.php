@@ -26,7 +26,7 @@ final class BloomInstaller implements InstallerInterface
 
     public function description(): ?string
     {
-        return 'https://github.com/FriendsOfSylius/sylius-starter/blob/main/docs/themes/bloom.md';
+        return 'https://github.com/the-swan-foundation/the-swan-starter/blob/main/docs/themes/bloom.md';
     }
 
     public function __invoke(App $app): void
