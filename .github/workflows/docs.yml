@@ -1,10 +1,10 @@
 name: Publish the documentation
 
-# Asks the documentation website (https://github.com/sylius-starter/docs) to rebuild,
-# so that https://sylius-starter.github.io/docs/ follows the docs/ folder of main.
+# Asks the documentation website (https://github.com/the-swan-foundation/the-swan-starter-docs) to rebuild,
+# so that https://the-swan-foundation.github.io/the-swan-starter-docs/ follows the docs/ folder of main.
 #
 # Requires a DOCS_DISPATCH_TOKEN secret: a token allowed to create repository
-# dispatch events (contents: write) on sylius-starter/docs.
+# dispatch events (contents: write) on the-swan-foundation/the-swan-starter-docs.
 
 "on":
     push:
@@ -27,5 +27,5 @@ jobs:
                   curl --fail-with-body -sS -X POST \
                       -H "Accept: application/vnd.github+json" \
                       -H "Authorization: Bearer ${GH_TOKEN}" \
-                      https://api.github.com/repos/sylius-starter/docs/dispatches \
+                      https://api.github.com/repos/the-swan-foundation/the-swan-starter-docs/dispatches \
                       -d '{"event_type": "docs-updated"}'

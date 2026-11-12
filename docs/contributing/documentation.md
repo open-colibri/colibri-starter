@@ -6,14 +6,14 @@ sidebar:
 ---
 
 The pages of this documentation live in the `docs/` folder of the monorepo. The website that publishes them on
-[sylius-starter.github.io/docs](https://sylius-starter.github.io/docs/) is built from the
-[sylius-starter/docs](https://github.com/sylius-starter/docs) repository with Astro Starlight.
+[the-swan-foundation.github.io/the-swan-starter-docs](https://the-swan-foundation.github.io/the-swan-starter-docs/) is built from the
+[the-swan-foundation/the-swan-starter-docs](https://github.com/the-swan-foundation/the-swan-starter-docs) repository with Astro Starlight.
 
 Clone that repository next to the monorepo, then serve the pages of your checkout:
 
 ```bash
-git clone git@github.com:sylius-starter/docs.git ../docs
-castor docs:up               # http://localhost:4321/docs/, follows the changes of docs/
+git clone git@github.com:the-swan-foundation/the-swan-starter-docs.git ../docs
+castor docs:up               # http://localhost:4321/the-swan-starter-docs/, follows the changes of docs/
 castor docs:up --port=4322   # on another port
 castor docs:stop
 ```

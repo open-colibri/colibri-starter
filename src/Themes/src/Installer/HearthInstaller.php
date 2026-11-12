@@ -26,7 +26,7 @@ final class HearthInstaller implements InstallerInterface
 
     public function description(): ?string
     {
-        return 'https://github.com/FriendsOfSylius/sylius-starter/blob/main/docs/themes/hearth.md';
+        return 'https://github.com/the-swan-foundation/the-swan-starter/blob/main/docs/themes/hearth.md';
     }
 
     public function __invoke(App $app): void

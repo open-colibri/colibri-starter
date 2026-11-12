@@ -36,10 +36,10 @@ castor sylius:import:dataset:list
 castor sylius:import:shop:create cellar
 ```
 
-Read the [documentation](https://github.com/FriendsOfSylius/sylius-starter/blob/main/docs/import/datasets.md) for usage.
+Read the [documentation](https://github.com/the-swan-foundation/the-swan-starter/blob/main/docs/import/datasets.md) for usage.
 
 ## Contributing
 
 This repository is a **read-only split** of the
-[FriendsOfSylius/sylius-starter](https://github.com/FriendsOfSylius/sylius-starter) monorepo.
+[the-swan-foundation/the-swan-starter](https://github.com/the-swan-foundation/the-swan-starter) monorepo.
 Please open issues and pull requests there.

@@ -49,7 +49,7 @@ Every package relies on `sylius-starter/core`; `sylius-starter/sylius-starter` i
 
 ## Documentation
 
-Read it online at [sylius-starter.github.io/docs](https://sylius-starter.github.io/docs/), or here on GitHub:
+Read it online at [the-swan-foundation.github.io/the-swan-starter-docs](https://the-swan-foundation.github.io/the-swan-starter-docs/), or here on GitHub:
 
 - **Getting started**: [Introduction](docs/index.md), [Installation](docs/getting-started/installation.md),
   [Packages](docs/getting-started/packages.md)
