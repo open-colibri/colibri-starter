@@ -55,6 +55,7 @@ const themeSelectors = {
   paws: '.paws-logo',
   culture: '.culture-logo',
   depot: '.depot-logo',
+  torque: '.torque-logo',
 };
 
 // A git worktree runs its own stack on <slug>.app.localhost, the main checkout on app.test.

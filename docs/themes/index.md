@@ -28,11 +28,12 @@ Brand looks that suit any catalogue: pick one for its style.
 
 ## Gear and supplies
 
-Electronics, outdoor equipment and trade supplies, built around specs and references.
+Electronics, outdoor equipment, car parts and trade supplies, built around specs and references.
 
 | Preview | Theme | Description |
 |---------|-------|-------------|
 | <a href="depot.md"><img src="../images/depot-homepage-wide-light.webp" alt="Depot storefront homepage on a wide screen, light scheme" width="140"></a> | [Depot](depot.md) | Trade supplies and B2B: a trade catalogue in white, steel and navy with a teal call to action, Outfit headings, a photo banner, department cards, catalogue lines with stock and reference, and a price break band |
+| <a href="torque.md"><img src="../images/torque-homepage-wide-light.webp" alt="Torque storefront homepage on a wide screen, light scheme" width="140"></a> | [Torque](torque.md) | Car parts and workshop equipment: midnight navy and signal orange, Saira headings, a parts finder over a car photo that searches by reference or size, department tiles, offer banners and catalogue lines with the part reference |
 | <a href="tech.md"><img src="../images/tech-homepage-wide-light.webp" alt="Tech storefront homepage on a wide screen, light scheme" width="140"></a> | [Tech](tech.md) | Electronics-store look in carbon, aluminium and signal orange |
 | <a href="summit.md"><img src="../images/summit-homepage-wide-light.webp" alt="Summit storefront homepage on a wide screen, light scheme" width="140"></a> | [Summit](summit.md) | Outdoor and adventure gear: full-bleed mountain photography, forest green, mineral grey, orange accents, condensed capitals and shop by activity |
 

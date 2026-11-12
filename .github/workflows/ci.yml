@@ -273,6 +273,8 @@ jobs:
                         value: "castor sylius:theme:setup culture"
                     -   name: Depot theme
                         value: "castor sylius:theme:setup depot"
+                    -   name: Torque theme
+                        value: "castor sylius:theme:setup torque"
                     -   name: Remove Menu items
                         value: "castor sylius:menu:remove official_support sylius.ui.administration"
                     -   name: Run Fixtures
