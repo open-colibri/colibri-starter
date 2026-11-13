@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-The [`Split packages`](https://github.com/the-swan-foundation/the-swan-starter/blob/main/.github/workflows/split.yml) workflow runs on every push to `main` and on every tag: it builds
+The [`Split packages`](https://github.com/open-colibri/colibri-starter/blob/main/.github/workflows/split.yml) workflow runs on every push to `main` and on every tag: it builds
 a matrix from `castor monorepo:packages --json` and runs `castor monorepo:split <package> --push` for each package.
 
 Requirements:
