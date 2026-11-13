@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Upsun\Util;
+namespace OpenColibri\Starter\Upsun\Util;
 
 use Symfony\Component\Yaml\Yaml as SymfonyYaml;
 

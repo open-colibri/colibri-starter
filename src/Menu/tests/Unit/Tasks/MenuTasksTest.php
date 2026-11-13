@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Menu\Tests\Unit\Tasks;
+namespace OpenColibri\Starter\Menu\Tests\Unit\Tasks;
 
 use Castor\Container;
 use Castor\Runner\Parallel\JobRegistry;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\PhpFile;
-use SyliusStarter\Menu\Tasks\MenuTasks;
+use OpenColibri\Starter\Core\PhpFile;
+use OpenColibri\Starter\Menu\Tasks\MenuTasks;
 use Symfony\Component\Console\Exception\MissingInputException;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;

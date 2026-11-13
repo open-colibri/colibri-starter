@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\ImportContext;
-use SyliusStarter\Import\Tests\CastorContainerTrait;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\ImportContext;
+use OpenColibri\Starter\Import\Tests\CastorContainerTrait;
 
-use function SyliusStarter\Import\import_progress_advance;
-use function SyliusStarter\Import\import_progress_current;
-use function SyliusStarter\Import\import_progress_finish;
-use function SyliusStarter\Import\import_progress_path;
-use function SyliusStarter\Import\import_progress_start;
+use function OpenColibri\Starter\Import\import_progress_advance;
+use function OpenColibri\Starter\Import\import_progress_current;
+use function OpenColibri\Starter\Import\import_progress_finish;
+use function OpenColibri\Starter\Import\import_progress_path;
+use function OpenColibri\Starter\Import\import_progress_start;
 
 final class ImportProgressTest extends TestCase
 {

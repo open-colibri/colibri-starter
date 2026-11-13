@@ -1,7 +1,7 @@
 <?php
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Plugins\Attribute\AsPluginInstaller;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginInstaller;
 use function Castor\io;
 
 #[AsPluginInstaller(name: 'test_installer_with_class')]

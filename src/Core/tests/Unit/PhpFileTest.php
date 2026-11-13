@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Tests\Unit;
+namespace OpenColibri\Starter\Core\Tests\Unit;
 
 use Castor\Container;
 use Castor\Runner\Parallel\JobRegistry;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\PhpFile;
+use OpenColibri\Starter\Core\PhpFile;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Filesystem\Filesystem;
 

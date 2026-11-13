@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Dataset;
+namespace OpenColibri\Starter\Core\Dataset;
 
 /**
- * Packages shipping ready-made datasets (sylius-starter/datasets, ...) register their directory here, usually from a
+ * Packages shipping ready-made datasets (open-colibri/starter-datasets, ...) register their directory here, usually from a
  * file autoloaded by Composer. The import package then lists them without knowing the packages that provide them.
  *
  * Each sub-directory of a registered directory is a dataset: products.yaml, collections.yaml, dataset.yaml and media/.

@@ -75,5 +75,5 @@ indicators. Check by hand that the focus ring of links, buttons and inputs is vi
 background, and that hover states keep the text readable.
 
 axe-core is downloaded from the npm registry on the first run (pinned version, checked against its integrity) and
-cached in `~/.cache/sylius-starter/`; set `AXE_CORE_PATH` to use another `axe.min.js`. The script requires Node.js 22+
+cached in `~/.cache/colibri-starter/`; set `AXE_CORE_PATH` to use another `axe.min.js`. The script requires Node.js 22+
 and Google Chrome or Chromium (set `CHROME_BIN` if it is not detected).

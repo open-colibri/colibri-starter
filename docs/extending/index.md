@@ -13,8 +13,8 @@ command line, exactly like a built-in one.
 
 ## Available attributes
 
-The attributes live in the `Attribute` namespace of their package (`SyliusStarter\Plugins\Attribute` and
-`SyliusStarter\Themes\Attribute`), take a required `name` argument,
+The attributes live in the `Attribute` namespace of their package (`OpenColibri\Starter\Plugins\Attribute` and
+`OpenColibri\Starter\Themes\Attribute`), take a required `name` argument,
 and can be put on a function or on a class.
 
 | Attribute                                           | Command                                              | Called when                            |
@@ -38,14 +38,14 @@ The most direct option, and a good fit for a component living in your `castor.ph
 ```php
 <?php
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Plugins\Attribute\AsPluginInstaller;
-use SyliusStarter\Plugins\Attribute\AsPluginRemover;
-use SyliusStarter\Core\Util\Assets;
-use SyliusStarter\Core\Util\Composer;
-use SyliusStarter\Core\Util\Database;
-use SyliusStarter\Core\Util\Docker;
-use SyliusStarter\Core\Util\Symfony;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginInstaller;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginRemover;
+use OpenColibri\Starter\Core\Util\Assets;
+use OpenColibri\Starter\Core\Util\Composer;
+use OpenColibri\Starter\Core\Util\Database;
+use OpenColibri\Starter\Core\Util\Docker;
+use OpenColibri\Starter\Core\Util\Symfony;
 
 use function Castor\io;
 
@@ -90,12 +90,12 @@ class is instantiated once, without arguments, and called on install/remove:
 ```php
 <?php
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Themes\Attribute\AsThemeInstaller;
-use SyliusStarter\Themes\Attribute\AsThemeRemover;
-use SyliusStarter\Core\Util\Assets;
-use SyliusStarter\Core\Util\Javascript;
-use SyliusStarter\Core\Util\Symfony;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Themes\Attribute\AsThemeInstaller;
+use OpenColibri\Starter\Themes\Attribute\AsThemeRemover;
+use OpenColibri\Starter\Core\Util\Assets;
+use OpenColibri\Starter\Core\Util\Javascript;
+use OpenColibri\Starter\Core\Util\Symfony;
 
 #[AsThemeInstaller(name: 'acme')]
 final class AcmeThemeInstaller

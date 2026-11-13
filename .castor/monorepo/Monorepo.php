@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Monorepo;
+namespace OpenColibri\Starter\Monorepo;
 
 /**
  * Monorepo helper: every directory in src/ holding a composer.json is a
@@ -15,11 +15,11 @@ namespace SyliusStarter\Monorepo;
  */
 final class Monorepo
 {
-    public const string VENDOR = 'sylius-starter';
-    public const string PACKAGE_PREFIX = 'sylius-starter/';
-    public const string REPOSITORY_OWNER = 'FriendsOfSylius';
-    public const string NAMESPACE = 'SyliusStarter';
-    public const string CORE_PACKAGE = 'sylius-starter/core';
+    public const string VENDOR = 'open-colibri';
+    public const string PACKAGE_PREFIX = 'open-colibri/starter-';
+    public const string REPOSITORY_OWNER = 'open-colibri';
+    public const string NAMESPACE = 'OpenColibri\\Starter';
+    public const string CORE_PACKAGE = 'open-colibri/starter-core';
 
     public function __construct(
         private readonly string $rootDir,
@@ -285,8 +285,8 @@ final class Monorepo
 
     /**
      * Splitsh-lite / git remote URL of a package split repository.
-     * "{name}" is replaced by the package name (sylius-starter/core), "{short}" by its short name (core)
-     * and "{repository}" by its GitHub repository (FriendsOfSylius/sylius-starter-core).
+     * "{name}" is replaced by the package name (open-colibri/starter-core), "{short}" by its short name (core)
+     * and "{repository}" by its GitHub repository (open-colibri/starter-core).
      */
     public static function remoteUrl(string $pattern, string $packageName): string
     {
@@ -298,11 +298,11 @@ final class Monorepo
     }
 
     /**
-     * GitHub repository of a package split: sylius-starter/core => FriendsOfSylius/sylius-starter-core.
+     * GitHub repository of a package split, in the open-colibri organization: open-colibri/starter-core.
      */
     public static function repositoryName(string $packageName): string
     {
-        return self::REPOSITORY_OWNER . '/' . str_replace('/', '-', $packageName);
+        return self::REPOSITORY_OWNER . '/' . substr($packageName, (int) strrpos($packageName, '/') + 1);
     }
 
     public static function shortName(string $packageName): string

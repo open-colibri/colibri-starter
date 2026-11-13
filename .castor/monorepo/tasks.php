@@ -7,7 +7,7 @@ namespace monorepo;
 use Castor\Attribute\AsArgument;
 use Castor\Attribute\AsOption;
 use Castor\Attribute\AsTask;
-use SyliusStarter\Monorepo\Monorepo;
+use OpenColibri\Starter\Monorepo\Monorepo;
 
 use function Castor\capture;
 use function Castor\context;
@@ -70,7 +70,7 @@ function validate(): int
  *
  * Examples:
  *   castor monorepo:split                         # dry-run: compute the split SHA of every package
- *   castor monorepo:split core --push             # push main of FriendsOfSylius/sylius-starter-core
+ *   castor monorepo:split core --push             # push main of open-colibri/starter-core
  *   castor monorepo:split --ref=refs/tags/v0.1.0 --push
  *
  * @param list<string> $packages

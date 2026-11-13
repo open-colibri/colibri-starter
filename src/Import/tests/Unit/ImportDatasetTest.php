@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Dataset\DatasetDirectories;
-use SyliusStarter\Import\Dataset\DatasetBuilders;
-use SyliusStarter\Import\ImportContext;
-use SyliusStarter\Import\Tests\CastorContainerTrait;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Dataset\DatasetDirectories;
+use OpenColibri\Starter\Import\Dataset\DatasetBuilders;
+use OpenColibri\Starter\Import\ImportContext;
+use OpenColibri\Starter\Import\Tests\CastorContainerTrait;
 use Symfony\Component\Yaml\Yaml;
 
-use function SyliusStarter\Import\build_import_dataset;
-use function SyliusStarter\Import\castor_host_dir;
-use function SyliusStarter\Import\create_import_shop_from_dataset;
-use function SyliusStarter\Import\delete_import_dataset;
-use function SyliusStarter\Import\download_import_image;
-use function SyliusStarter\Import\export_import_dataset;
-use function SyliusStarter\Import\import_media_fixture_path;
-use function SyliusStarter\Import\is_local_import_image;
-use function SyliusStarter\Import\list_import_datasets;
-use function SyliusStarter\Import\load_project_config;
+use function OpenColibri\Starter\Import\build_import_dataset;
+use function OpenColibri\Starter\Import\castor_host_dir;
+use function OpenColibri\Starter\Import\create_import_shop_from_dataset;
+use function OpenColibri\Starter\Import\delete_import_dataset;
+use function OpenColibri\Starter\Import\download_import_image;
+use function OpenColibri\Starter\Import\export_import_dataset;
+use function OpenColibri\Starter\Import\import_media_fixture_path;
+use function OpenColibri\Starter\Import\is_local_import_image;
+use function OpenColibri\Starter\Import\list_import_datasets;
+use function OpenColibri\Starter\Import\load_project_config;
 
 final class ImportDatasetTest extends TestCase
 {

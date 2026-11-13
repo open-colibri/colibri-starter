@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Import\Tests\CastorContainerTrait;
+use OpenColibri\Starter\Import\Tests\CastorContainerTrait;
 
-use function SyliusStarter\Import\build_product_fixtures;
+use function OpenColibri\Starter\Import\build_product_fixtures;
 
 final class ProductFixturesBuilderTest extends TestCase
 {

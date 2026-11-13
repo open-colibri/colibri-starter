@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes\Remover;
+namespace OpenColibri\Starter\Themes\Remover;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Component\RemoverInterface;
-use SyliusStarter\Core\Util\Javascript;
-use SyliusStarter\Themes\ColorScheme;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Component\RemoverInterface;
+use OpenColibri\Starter\Core\Util\Javascript;
+use OpenColibri\Starter\Themes\ColorScheme;
 
 use function Castor\finder;
 use function Castor\fs;

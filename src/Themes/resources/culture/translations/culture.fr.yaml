@@ -42,7 +42,7 @@ culture:
             title: 'Des idées pour tous les goûts'
     footer:
         tagline: 'Livres, jeux de société, jeux vidéo, instruments et objets de collection : toute la culture, choisie par des passionnés.'
-        notice: 'Culture & Co est un magasin culturel fictif, créé pour la démo de Sylius Starter.'
+        notice: 'Culture & Co est un magasin culturel fictif, créé pour la démo de Colibri Starter.'
         services:
             delivery:
                 title: 'Livraison offerte'

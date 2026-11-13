@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\ImportContext;
-use SyliusStarter\Import\Tests\CastorContainerTrait;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\ImportContext;
+use OpenColibri\Starter\Import\Tests\CastorContainerTrait;
 
-use function SyliusStarter\Import\purge_import_shop_artifacts;
-use function SyliusStarter\Import\write_last_generated_import;
+use function OpenColibri\Starter\Import\purge_import_shop_artifacts;
+use function OpenColibri\Starter\Import\write_last_generated_import;
 
 final class PurgeImportShopArtifactsTest extends TestCase
 {

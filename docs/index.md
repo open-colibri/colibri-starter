@@ -1,14 +1,14 @@
 ---
 title: Introduction
-description: Sylius Starter turns a PHP description of your stack into a Sylius app, and gives you the tasks to drive it.
+description: Colibri Starter turns a PHP description of your stack into a Sylius app, and gives you the tasks to drive it.
 sidebar:
   order: 0
 ---
 
-Sylius Starter is a set of [Castor](https://castor.jolicode.com/) packages that turns a PHP description of your stack
+Colibri Starter is a set of [Castor](https://castor.jolicode.com/) packages that turns a PHP description of your stack
 into a Sylius app, and gives you the tasks to drive it.
 
-## Why Sylius Starter?
+## Why Colibri Starter?
 
 Setting up a Sylius project is rarely a single `composer require`. Adding the CMS plugin means pinning a version
 compatible with your API Platform (otherwise Composer silently falls back to a release without its JS package),
@@ -17,7 +17,7 @@ Removing it later means doing all of that in reverse, in the right order: roll b
 that defines them is gone, remove the package, rebuild the assets, clear the cache. Most of these steps live in a
 README, a blog post or someone's memory, and each project redoes them by hand.
 
-Sylius Starter turns each of these workflows into one command:
+Colibri Starter turns each of these workflows into one command:
 
 ```bash
 castor sylius:add cms invoicing        # install, configure, migrate, build
@@ -27,7 +27,7 @@ castor sylius:theme:setup canvas       # switch the whole storefront theme
 
 ### More than Flex recipes
 
-Symfony Flex recipes install and configure a package, and stop there. Sylius Starter goes further:
+Symfony Flex recipes install and configure a package, and stop there. Colibri Starter goes further:
 
 - **Whole workflows**: Composer and Yarn dependencies, bundles, JS controllers, Doctrine migrations, assets,
   cache and Docker services, chained in the right order.
@@ -43,7 +43,7 @@ Symfony Flex recipes install and configure a package, and stop there. Sylius Sta
 ### Made for working with AI agents
 
 Ask Claude or Codex to "add the CMS plugin" and it has to discover the steps, read the project and edit several files,
-with a good chance of missing one. Give it Sylius Starter instead, and the same request becomes
+with a good chance of missing one. Give it Colibri Starter instead, and the same request becomes
 `castor sylius:add cms`: a known, tested command whose result does not depend on the agent's guesswork.
 
 The agent spends its tokens on what is specific to your project, and the repetitive work stays deterministic.
@@ -56,7 +56,7 @@ The built-in plugins and themes are only a starting point. Register your own wit
 
 ## Themes
 
-Sylius Starter comes with ready-to-use storefront themes: general-purpose looks, and stores built around one kind of
+Colibri Starter comes with ready-to-use storefront themes: general-purpose looks, and stores built around one kind of
 shop, from grocery and home decoration to culture and trade supplies. Each ships a light and a dark scheme, and one
 command installs it:
 
@@ -77,8 +77,8 @@ Browse [all the themes](themes/index.md), by category.
 
 ## Where to go next
 
-- [Installation](getting-started/installation.md): start a new project, or add Sylius Starter to an existing one.
-- [Packages](getting-started/packages.md): what each `sylius-starter/*` package brings.
+- [Installation](getting-started/installation.md): start a new project, or add Colibri Starter to an existing one.
+- [Packages](getting-started/packages.md): what each `open-colibri/starter-*` package brings.
 - Commands: [plugins](commands/plugins.md), [themes](commands/themes.md), [Admin menu](commands/admin-menu.md),
   [Upsun](commands/upsun.md).
 - [Themes](themes/index.md): every storefront theme, by category, with its screenshots.

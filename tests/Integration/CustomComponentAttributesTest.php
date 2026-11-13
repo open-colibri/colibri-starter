@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Tests\Integration;
+namespace OpenColibri\Starter\Tests\Integration;
 
 use Castor\Exception\FunctionConfigurationException;
 use Castor\Helper\PathHelper;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Plugins\Attribute\AsPluginInstaller;
-use SyliusStarter\Plugins\Attribute\AsPluginRemover;
-use SyliusStarter\Themes\Attribute\AsThemeInstaller;
-use SyliusStarter\Themes\Attribute\AsThemeRemover;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginInstaller;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginRemover;
+use OpenColibri\Starter\Themes\Attribute\AsThemeInstaller;
+use OpenColibri\Starter\Themes\Attribute\AsThemeRemover;
 
-use function SyliusStarter\Plugins\resolve_plugin_installer;
-use function SyliusStarter\Plugins\resolve_plugin_remover;
-use function SyliusStarter\Themes\resolve_theme_installer;
-use function SyliusStarter\Themes\resolve_theme_remover;
+use function OpenColibri\Starter\Plugins\resolve_plugin_installer;
+use function OpenColibri\Starter\Plugins\resolve_plugin_remover;
+use function OpenColibri\Starter\Themes\resolve_theme_installer;
+use function OpenColibri\Starter\Themes\resolve_theme_remover;
 
 #[CoversClass(App::class)]
 final class CustomComponentAttributesTest extends TestCase

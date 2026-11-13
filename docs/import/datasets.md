@@ -22,7 +22,7 @@ In a dataset, the `image` of a product or a collection is a path relative to the
 
 ## Ready-made datasets
 
-`sylius-starter/datasets` ships ready-made datasets, images included, so a demo shop needs no AI call nor download:
+`open-colibri/starter-datasets` ships ready-made datasets, images included, so a demo shop needs no AI call nor download:
 
 | Dataset        | Catalog                                                       | Suggested theme                           |
 |----------------|---------------------------------------------------------------|-------------------------------------------|
@@ -48,7 +48,7 @@ package tests check them. Another package can ship its own datasets by registeri
 file:
 
 ```php
-use SyliusStarter\Core\Dataset\DatasetDirectories;
+use OpenColibri\Starter\Core\Dataset\DatasetDirectories;
 
 DatasetDirectories::register('my-datasets', __DIR__ . '/../datasets');
 ```
@@ -75,7 +75,7 @@ A source is a callable that writes the catalog of the slug it receives, in an im
 datasets one (the shop import functions then write to the dataset):
 
 ```php
-use SyliusStarter\Import\Dataset\DatasetBuilders;
+use OpenColibri\Starter\Import\Dataset\DatasetBuilders;
 
 DatasetBuilders::register('existing', static function (string $slug, string $name, string $description, ?string $url, int $limit): void {
     fetch_import_data($url, $name, $description, $slug);

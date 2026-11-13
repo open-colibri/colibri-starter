@@ -1,5 +1,5 @@
 {
-    "name": "sylius-starter/themes",
+    "name": "open-colibri/starter-themes",
     "description": "Ready-to-use Sylius storefront themes (Canvas, Blush, Prompt, Volt, Lagoon, Aurora, Tech, Retro Gaming, Drive, Cellar, Roastery, Teahouse, Summit, Groove, Arena, Hearth, Bloom, Paws, Culture, Depot, Torque) installable with Castor",
     "type": "library",
     "license": "MIT",
@@ -17,13 +17,13 @@
     ],
     "require": {
         "php": ">=8.3",
-        "sylius-starter/core": "self.version",
+        "open-colibri/starter-core": "self.version",
         "nikic/php-parser": "^5.0",
         "castor-php/docker": "^0.10"
     },
     "autoload": {
         "psr-4": {
-            "SyliusStarter\\Themes\\": "src/"
+            "OpenColibri\\Starter\\Themes\\": "src/"
         },
         "files": [
             "src/functions.php"
@@ -31,7 +31,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SyliusStarter\\Themes\\Tests\\": "tests/"
+            "OpenColibri\\Starter\\Themes\\Tests\\": "tests/"
         }
     },
     "extra": {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Util;
+namespace OpenColibri\Starter\Core\Util;
 
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 
 use function Castor\io;
 

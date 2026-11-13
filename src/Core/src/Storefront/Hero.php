@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Storefront;
+namespace OpenColibri\Starter\Core\Storefront;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Util\Yaml;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Util\Yaml;
 use Symfony\Component\Finder\Finder;
 
 use function Castor\fs;

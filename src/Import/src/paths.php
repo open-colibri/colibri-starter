@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Core\Util\Runner;
+use OpenColibri\Starter\Core\Util\Runner;
 
 use function Castor\fs;
 

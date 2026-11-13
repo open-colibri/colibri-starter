@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Import\Dto\AiCatalogExtraction;
-use SyliusStarter\Import\Dto\AiProductEntry;
-use SyliusStarter\Import\Dto\CollectionEntry;
+use OpenColibri\Starter\Import\Dto\AiCatalogExtraction;
+use OpenColibri\Starter\Import\Dto\AiProductEntry;
+use OpenColibri\Starter\Import\Dto\CollectionEntry;
 use Symfony\AI\Platform\Message\Message;
 use Symfony\AI\Platform\Message\MessageBag;
 use Symfony\Component\Yaml\Yaml;
@@ -486,8 +486,8 @@ function request_openrouter_image_binary(string $prompt): string
     $client = ai_http_client()->withOptions([
         'headers' => [
             'Authorization' => 'Bearer ' . ai_api_key(),
-            'HTTP-Referer' => 'https://sylius-starter.local',
-            'X-Title' => 'Sylius Starter Import',
+            'HTTP-Referer' => 'https://github.com/open-colibri/colibri-starter',
+            'X-Title' => 'Colibri Starter Import',
         ],
     ]);
 

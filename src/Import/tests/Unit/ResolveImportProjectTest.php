@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\ImportContext;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\ImportContext;
 use Symfony\Component\Yaml\Yaml;
 
-use function SyliusStarter\Import\count_import_products;
-use function SyliusStarter\Import\import_yaml_status;
-use function SyliusStarter\Import\resolve_import_project;
-use function SyliusStarter\Import\update_project_config;
-use function SyliusStarter\Import\write_project_config;
+use function OpenColibri\Starter\Import\count_import_products;
+use function OpenColibri\Starter\Import\import_yaml_status;
+use function OpenColibri\Starter\Import\resolve_import_project;
+use function OpenColibri\Starter\Import\update_project_config;
+use function OpenColibri\Starter\Import\write_project_config;
 
 final class ResolveImportProjectTest extends TestCase
 {

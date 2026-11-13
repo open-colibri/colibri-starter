@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Upsun;
+namespace OpenColibri\Starter\Upsun;
 
-use SyliusStarter\Core\Service\SyliusService;
-use SyliusStarter\Core\Task\TaskProviderRegistry;
-use SyliusStarter\Upsun\Tasks\UpsunTasks;
+use OpenColibri\Starter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Task\TaskProviderRegistry;
+use OpenColibri\Starter\Upsun\Tasks\UpsunTasks;
 
 TaskProviderRegistry::register(
     'upsun',

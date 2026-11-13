@@ -1,5 +1,5 @@
 {
-    "name": "sylius-starter/menu",
+    "name": "open-colibri/starter-menu",
     "description": "Castor tasks to remove and restore Sylius admin menu items",
     "type": "library",
     "license": "MIT",
@@ -17,11 +17,11 @@
     ],
     "require": {
         "php": ">=8.3",
-        "sylius-starter/core": "self.version"
+        "open-colibri/starter-core": "self.version"
     },
     "autoload": {
         "psr-4": {
-            "SyliusStarter\\Menu\\": "src/"
+            "OpenColibri\\Starter\\Menu\\": "src/"
         },
         "files": [
             "src/functions.php"
@@ -29,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SyliusStarter\\Menu\\Tests\\": "tests/"
+            "OpenColibri\\Starter\\Menu\\Tests\\": "tests/"
         }
     },
     "extra": {

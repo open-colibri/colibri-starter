@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests;
+namespace OpenColibri\Starter\Import\Tests;
 
 use Castor\Container;
 use Castor\Runner\Parallel\JobRegistry;

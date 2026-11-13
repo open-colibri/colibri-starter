@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\Extension\ImportExtensionInterface;
-use SyliusStarter\Import\Extension\ImportExtensions;
-use SyliusStarter\Import\ImportContext;
-use SyliusStarter\Import\Tests\CastorContainerTrait;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\Extension\ImportExtensionInterface;
+use OpenColibri\Starter\Import\Extension\ImportExtensions;
+use OpenColibri\Starter\Import\ImportContext;
+use OpenColibri\Starter\Import\Tests\CastorContainerTrait;
 
-use function SyliusStarter\Import\ensure_import_scaffold;
-use function SyliusStarter\Import\import_scaffold_marker_path;
-use function SyliusStarter\Import\list_import_shops;
-use function SyliusStarter\Import\write_import_extension_fixture_files;
-use function SyliusStarter\Import\write_import_suite_loader;
-use function SyliusStarter\Import\write_project_config;
+use function OpenColibri\Starter\Import\ensure_import_scaffold;
+use function OpenColibri\Starter\Import\import_scaffold_marker_path;
+use function OpenColibri\Starter\Import\list_import_shops;
+use function OpenColibri\Starter\Import\write_import_extension_fixture_files;
+use function OpenColibri\Starter\Import\write_import_suite_loader;
+use function OpenColibri\Starter\Import\write_project_config;
 
 final class ImportExtensionsTest extends TestCase
 {

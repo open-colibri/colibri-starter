@@ -2,7 +2,7 @@
     "require": {
         "castor-php/docker": "^0.10",
         "castor-php/php-qa": "^0.3.0",
-        "sylius-starter/sylius-starter": "@dev",
+        "open-colibri/starter": "@dev",
         "nikic/php-parser": "^5.8"
     },
     "repositories": [

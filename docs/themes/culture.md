@@ -68,7 +68,7 @@ banners with their discount and themed selections from the booksellers.
 
 The screenshots above show a demo catalog of eighteen books, comics, board games, video games, instruments and
 collectibles from a fictional cultural store, on six shelves (Books, Comics & Manga, Board Games, Video Games,
-Music Instruments, Collectibles), shipped as the `culture` dataset of `sylius-starter/datasets`
+Music Instruments, Collectibles), shipped as the `culture` dataset of `open-colibri/starter-datasets`
 (`src/Datasets/datasets/culture/`: `products.yaml`, `collections.yaml`, and in `media/` a photo of each product
 on the coloured paper of its shelf and a photo of each shelf, generated with Ollama). Three house universes run
 across the shelves, for thematic merchandising: the Ashfall saga (the novel, the strategy game and the

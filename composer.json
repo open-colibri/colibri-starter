@@ -1,6 +1,6 @@
 {
-    "name": "sylius-starter/sylius-starter",
-    "description": "Sylius Starter: Castor tooling to bootstrap and customize Sylius applications (monorepo of all sylius-starter/* packages)",
+    "name": "open-colibri/starter",
+    "description": "Colibri Starter: Castor tooling to bootstrap and customize Sylius applications (monorepo of all open-colibri/starter-* packages)",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -32,26 +32,26 @@
         "phpunit/phpunit": "^13.2"
     },
     "replace": {
-        "sylius-starter/core": "self.version",
-        "sylius-starter/datasets": "self.version",
-        "sylius-starter/import": "self.version",
-        "sylius-starter/menu": "self.version",
-        "sylius-starter/plugins": "self.version",
-        "sylius-starter/themes": "self.version",
-        "sylius-starter/upsun": "self.version"
+        "open-colibri/starter-core": "self.version",
+        "open-colibri/starter-datasets": "self.version",
+        "open-colibri/starter-import": "self.version",
+        "open-colibri/starter-menu": "self.version",
+        "open-colibri/starter-plugins": "self.version",
+        "open-colibri/starter-themes": "self.version",
+        "open-colibri/starter-upsun": "self.version"
     },
     "suggest": {
         "jolicode/castor-api": "Expose import tasks over HTTP"
     },
     "autoload": {
         "psr-4": {
-            "SyliusStarter\\Core\\": "src/Core/src/",
-            "SyliusStarter\\Datasets\\": "src/Datasets/src/",
-            "SyliusStarter\\Import\\": "src/Import/src/",
-            "SyliusStarter\\Menu\\": "src/Menu/src/",
-            "SyliusStarter\\Plugins\\": "src/Plugins/src/",
-            "SyliusStarter\\Themes\\": "src/Themes/src/",
-            "SyliusStarter\\Upsun\\": "src/Upsun/src/"
+            "OpenColibri\\Starter\\Core\\": "src/Core/src/",
+            "OpenColibri\\Starter\\Datasets\\": "src/Datasets/src/",
+            "OpenColibri\\Starter\\Import\\": "src/Import/src/",
+            "OpenColibri\\Starter\\Menu\\": "src/Menu/src/",
+            "OpenColibri\\Starter\\Plugins\\": "src/Plugins/src/",
+            "OpenColibri\\Starter\\Themes\\": "src/Themes/src/",
+            "OpenColibri\\Starter\\Upsun\\": "src/Upsun/src/"
         },
         "files": [
             "src/Core/src/Installer/functions.php",
@@ -69,15 +69,15 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SyliusStarter\\Core\\Tests\\": "src/Core/tests/",
-            "SyliusStarter\\Datasets\\Tests\\": "src/Datasets/tests/",
-            "SyliusStarter\\Import\\Tests\\": "src/Import/tests/",
-            "SyliusStarter\\Menu\\Tests\\": "src/Menu/tests/",
-            "SyliusStarter\\Plugins\\Tests\\": "src/Plugins/tests/",
-            "SyliusStarter\\Themes\\Tests\\": "src/Themes/tests/",
-            "SyliusStarter\\Upsun\\Tests\\": "src/Upsun/tests/",
-            "SyliusStarter\\Tests\\": "tests/",
-            "SyliusStarter\\Monorepo\\": ".castor/monorepo/"
+            "OpenColibri\\Starter\\Core\\Tests\\": "src/Core/tests/",
+            "OpenColibri\\Starter\\Datasets\\Tests\\": "src/Datasets/tests/",
+            "OpenColibri\\Starter\\Import\\Tests\\": "src/Import/tests/",
+            "OpenColibri\\Starter\\Menu\\Tests\\": "src/Menu/tests/",
+            "OpenColibri\\Starter\\Plugins\\Tests\\": "src/Plugins/tests/",
+            "OpenColibri\\Starter\\Themes\\Tests\\": "src/Themes/tests/",
+            "OpenColibri\\Starter\\Upsun\\Tests\\": "src/Upsun/tests/",
+            "OpenColibri\\Starter\\Tests\\": "tests/",
+            "OpenColibri\\Starter\\Monorepo\\": ".castor/monorepo/"
         }
     },
     "extra": {

@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Import\Dto\AiCatalogExtraction;
-use SyliusStarter\Import\Dto\AiProductEntry;
-use SyliusStarter\Import\Dto\CollectionEntry;
-use SyliusStarter\Import\Dto\CollectionExtraction;
-use SyliusStarter\Import\Dto\ProductSelectionEntry;
-use SyliusStarter\Import\Dto\ProductSelectionExtraction;
-use SyliusStarter\Import\Dto\ProductTaxonAssignmentEntry;
-use SyliusStarter\Import\Dto\ProductTaxonAssignmentExtraction;
+use OpenColibri\Starter\Import\Dto\AiCatalogExtraction;
+use OpenColibri\Starter\Import\Dto\AiProductEntry;
+use OpenColibri\Starter\Import\Dto\CollectionEntry;
+use OpenColibri\Starter\Import\Dto\CollectionExtraction;
+use OpenColibri\Starter\Import\Dto\ProductSelectionEntry;
+use OpenColibri\Starter\Import\Dto\ProductSelectionExtraction;
+use OpenColibri\Starter\Import\Dto\ProductTaxonAssignmentEntry;
+use OpenColibri\Starter\Import\Dto\ProductTaxonAssignmentExtraction;
 use Symfony\AI\Platform\StructuredOutput\ResponseFormatFactory;
 
 final class AiCatalogDtoTest extends TestCase
@@ -45,7 +45,7 @@ final class AiCatalogDtoTest extends TestCase
     #[DataProvider('dtoClassProvider')]
     public function testDtoClassIsAutoloadableFromItsOwnFile(string $class): void
     {
-        $relative = str_replace('SyliusStarter\\Import\\', '', $class);
+        $relative = str_replace('OpenColibri\\Starter\\Import\\', '', $class);
         $expectedFile = \dirname(__DIR__, 2) . '/src/' . str_replace('\\', '/', $relative) . '.php';
 
         static::assertFileExists($expectedFile);

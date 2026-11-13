@@ -1,6 +1,6 @@
-# sylius-starter/datasets
+# open-colibri/starter-datasets
 
-Ready-made demo datasets for the Sylius Starter import package: each one is a catalog (`products.yaml`,
+Ready-made demo datasets for the Colibri Starter import package: each one is a catalog (`products.yaml`,
 `collections.yaml`) shipped with its images (`media/`) and a `dataset.yaml` (name, description, suggested theme), so a
 demo shop is created from it without any AI call or download.
 
@@ -27,10 +27,10 @@ demo shop is created from it without any AI call or download.
 In your Castor project:
 
 ```bash
-castor composer require sylius-starter/datasets
+castor composer require open-colibri/starter-datasets
 ```
 
-Or install every Sylius Starter package at once with `sylius-starter/sylius-starter`.
+Or install every Colibri Starter package at once with `open-colibri/starter`.
 
 ```bash
 castor sylius:import:dataset:list

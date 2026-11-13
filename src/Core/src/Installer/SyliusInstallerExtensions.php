@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Installer;
+namespace OpenColibri\Starter\Core\Installer;
 
 final class SyliusInstallerExtensions
 {

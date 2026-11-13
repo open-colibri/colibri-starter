@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Core\Dataset\DatasetDirectories;
-use SyliusStarter\Import\Dataset\DatasetBuilders;
+use OpenColibri\Starter\Core\Dataset\DatasetDirectories;
+use OpenColibri\Starter\Import\Dataset\DatasetBuilders;
 use Symfony\Component\Yaml\Yaml;
 
 use function Castor\fs;
@@ -13,7 +13,7 @@ use function Castor\io;
 
 /**
  * A dataset is a catalog (products.yaml, collections.yaml) with its images (media/) and a dataset.yaml (name,
- * description, …), from which shops are created. Built-in datasets come from packages (sylius-starter/datasets,
+ * description, …), from which shops are created. Built-in datasets come from packages (open-colibri/starter-datasets,
  * see DatasetDirectories), the others are built by sylius:import:dataset:build into .castor/import/datasets/.
  *
  * In a dataset, an image is a path relative to the dataset directory ("media/<code>.webp"): creating a shop copies

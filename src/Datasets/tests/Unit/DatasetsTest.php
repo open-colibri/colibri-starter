@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Datasets\Tests\Unit;
+namespace OpenColibri\Starter\Datasets\Tests\Unit;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\Dataset\DatasetDirectories;
+use OpenColibri\Starter\Core\Dataset\DatasetDirectories;
 use Symfony\Component\Yaml\Yaml;
 
 final class DatasetsTest extends TestCase

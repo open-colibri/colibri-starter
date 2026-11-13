@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Dataset;
+namespace OpenColibri\Starter\Import\Dataset;
 
 /**
  * Sources a dataset can be built from (sylius:import:dataset:build --source=…). The import package registers "ai";

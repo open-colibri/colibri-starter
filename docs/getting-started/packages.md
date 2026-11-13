@@ -1,20 +1,20 @@
 ---
 title: Packages
-description: The sylius-starter/* packages, their namespace and the tasks they provide.
+description: The open-colibri/starter-* packages, their namespace and the tasks they provide.
 sidebar:
   order: 2
 ---
 
 | Package                                                                              | Namespace               | Tasks                                                                 |
 |--------------------------------------------------------------------------------------|-------------------------|-----------------------------------------------------------------------|
-| [`sylius-starter/core`](https://github.com/FriendsOfSylius/sylius-starter-core)       | `SyliusStarter\Core`    | Castor plugin: `SyliusService`, installer, `sylius:fixtures`, helpers |
-| [`sylius-starter/plugins`](https://github.com/FriendsOfSylius/sylius-starter-plugins) | `SyliusStarter\Plugins` | [`sylius:plugin:add`, `sylius:plugin:remove`](../commands/plugins.md) |
-| [`sylius-starter/themes`](https://github.com/FriendsOfSylius/sylius-starter-themes)   | `SyliusStarter\Themes`  | [`sylius:theme:setup`](../commands/themes.md)                         |
-| [`sylius-starter/menu`](https://github.com/FriendsOfSylius/sylius-starter-menu)       | `SyliusStarter\Menu`    | [`sylius:menu:remove`](../commands/admin-menu.md)                     |
-| [`sylius-starter/datasets`](https://github.com/FriendsOfSylius/sylius-starter-datasets) | `SyliusStarter\Datasets` | [ready-made datasets](../import/datasets.md) for `sylius:import:shop:create` |
-| [`sylius-starter/import`](https://github.com/FriendsOfSylius/sylius-starter-import)   | `SyliusStarter\Import`  | [`sylius:import:*`](../import/index.md)                               |
-| [`sylius-starter/upsun`](https://github.com/FriendsOfSylius/sylius-starter-upsun)     | `SyliusStarter\Upsun`   | [`sylius:upsun:*`](../commands/upsun.md)                              |
-| `sylius-starter/sylius-starter`                                                      | —                       | All of the above                                                      |
+| [`open-colibri/starter-core`](https://github.com/open-colibri/starter-core)       | `OpenColibri\Starter\Core`    | Castor plugin: `SyliusService`, installer, `sylius:fixtures`, helpers |
+| [`open-colibri/starter-plugins`](https://github.com/open-colibri/starter-plugins) | `OpenColibri\Starter\Plugins` | [`sylius:plugin:add`, `sylius:plugin:remove`](../commands/plugins.md) |
+| [`open-colibri/starter-themes`](https://github.com/open-colibri/starter-themes)   | `OpenColibri\Starter\Themes`  | [`sylius:theme:setup`](../commands/themes.md)                         |
+| [`open-colibri/starter-menu`](https://github.com/open-colibri/starter-menu)       | `OpenColibri\Starter\Menu`    | [`sylius:menu:remove`](../commands/admin-menu.md)                     |
+| [`open-colibri/starter-datasets`](https://github.com/open-colibri/starter-datasets) | `OpenColibri\Starter\Datasets` | [ready-made datasets](../import/datasets.md) for `sylius:import:shop:create` |
+| [`open-colibri/starter-import`](https://github.com/open-colibri/starter-import)   | `OpenColibri\Starter\Import`  | [`sylius:import:*`](../import/index.md)                               |
+| [`open-colibri/starter-upsun`](https://github.com/open-colibri/starter-upsun)     | `OpenColibri\Starter\Upsun`   | [`sylius:upsun:*`](../commands/upsun.md)                              |
+| `open-colibri/starter`                                                      | —                       | All of the above                                                      |
 
 The core is the Castor plugin itself. Every other package only contributes tasks: it registers them in the core
 from a file autoloaded by Composer, so installing a package is enough to get its tasks on your `SyliusService`.

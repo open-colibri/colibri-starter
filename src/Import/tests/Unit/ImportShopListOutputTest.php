@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
-use function SyliusStarter\Import\import_shop_list_table;
-use function SyliusStarter\Import\mode_from_import_sources;
+use function OpenColibri\Starter\Import\import_shop_list_table;
+use function OpenColibri\Starter\Import\mode_from_import_sources;
 
 require_once \dirname(__DIR__, 2) . '/src/project.php';
 

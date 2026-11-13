@@ -214,7 +214,7 @@ async function loadAxeSource() {
     // Not installed: use the cached download.
   }
 
-  const cacheDir = join(process.env.XDG_CACHE_HOME || join(homedir(), '.cache'), 'sylius-starter');
+  const cacheDir = join(process.env.XDG_CACHE_HOME || join(homedir(), '.cache'), 'colibri-starter');
   const cached = join(cacheDir, `axe-core-${axeVersion}.min.js`);
   if (existsSync(cached)) return readFileSync(cached, 'utf8');
 

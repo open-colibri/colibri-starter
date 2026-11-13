@@ -10,8 +10,8 @@ Every task package registers its tasks in the core `TaskProviderRegistry`. You c
 
 ```php
 use Castor\Attribute\AsTask;
-use SyliusStarter\Core\Service\SyliusService;
-use SyliusStarter\Core\Task\TaskProviderRegistry;
+use OpenColibri\Starter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Task\TaskProviderRegistry;
 
 use function Castor\io;
 
@@ -26,5 +26,5 @@ TaskProviderRegistry::register('my_tasks', static fn (SyliusService $service): i
 ## Installer extensions
 
 A package can also hook into `castor docker:service:install sylius` (extra questions and steps run once Sylius is
-installed) by registering a `SyliusInstallerExtensionInterface` in `SyliusInstallerExtensions`, as `sylius-starter/themes` does to ask
+installed) by registering a `SyliusInstallerExtensionInterface` in `SyliusInstallerExtensions`, as `open-colibri/starter-themes` does to ask
 which storefront theme to use.

@@ -1,7 +1,7 @@
 <?php
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Plugins\Attribute\AsPluginRemover;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginRemover;
 use function Castor\io;
 
 #[AsPluginRemover(name: 'test_remover_with_class')]

@@ -78,7 +78,7 @@ portions and subscriptions.
 
 The screenshots above show a demo catalog of eighteen products for dogs and cats from a fictional pet supply
 house, in six aisles (Food, Treats, Toys, Accessories, Beds, Grooming & Care), shipped as the `pets` dataset of
-`sylius-starter/datasets` (`src/Datasets/datasets/pets/`: `products.yaml`, `collections.yaml`, and in `media/`
+`open-colibri/starter-datasets` (`src/Datasets/datasets/pets/`: `products.yaml`, `collections.yaml`, and in `media/`
 a photo of each product generated with Ollama on the pastel of its aisle, some with a dog or a cat). The
 products are the ones of the homepage (the bestsellers of the six aisles and the recipe of the pet passport),
 and descriptions carry what a pet parent looks for: recipe, daily portion, size, materials and care.

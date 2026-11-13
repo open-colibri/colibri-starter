@@ -71,7 +71,7 @@ Sylius shop, so that descriptions and forms remain easy to read.
 
 The screenshots above show a demo catalog of sixteen retro consoles, games, handhelds, controllers and arcade parts
 from fictional brands, on six shelves (Consoles, Games, Handhelds, Controllers, Arcade, Accessories), shipped as the
-`retro-gaming` dataset of `sylius-starter/datasets` (`src/Datasets/datasets/retro-gaming/`: `products.yaml`,
+`retro-gaming` dataset of `open-colibri/starter-datasets` (`src/Datasets/datasets/retro-gaming/`: `products.yaml`,
 `collections.yaml`, and in `media/` a photo of each item generated with Ollama, under the magenta and cyan neon lights
 of the theme on a console-blue backdrop). Descriptions carry what a retro collector looks for: condition and grading,
 region, what is in the box and the refurbishing done. Create a shop from it with the

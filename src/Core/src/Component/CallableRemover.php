@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Component;
+namespace OpenColibri\Starter\Core\Component;
 
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 
 final readonly class CallableRemover implements RemoverInterface
 {

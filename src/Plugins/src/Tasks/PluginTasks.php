@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Plugins\Tasks;
+namespace OpenColibri\Starter\Plugins\Tasks;
 
 use Castor\Attribute\AsRawTokens;
 use Castor\Attribute\AsTask;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Component\ComponentChoices;
-use SyliusStarter\Core\Component\InstallerInterface;
-use SyliusStarter\Core\Component\RemoverInterface;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Component\ComponentChoices;
+use OpenColibri\Starter\Core\Component\InstallerInterface;
+use OpenColibri\Starter\Core\Component\RemoverInterface;
 
 use function Castor\io;
 

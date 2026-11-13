@@ -11,9 +11,9 @@ needing more (e.g. a sales kit giving each demo shop its own admin) registers an
 ```php
 <?php
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\Extension\ImportExtensionInterface;
-use SyliusStarter\Import\Extension\ImportExtensions;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\Extension\ImportExtensionInterface;
+use OpenColibri\Starter\Import\Extension\ImportExtensions;
 
 ImportExtensions::register('demo_admins', new class implements ImportExtensionInterface {
     public function scaffold(App $app): void

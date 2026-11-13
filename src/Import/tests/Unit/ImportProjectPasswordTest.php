@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\ImportContext;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\ImportContext;
 
-use function SyliusStarter\Import\build_shop_user_fixture;
-use function SyliusStarter\Import\generate_import_password;
-use function SyliusStarter\Import\write_project_config;
+use function OpenColibri\Starter\Import\build_shop_user_fixture;
+use function OpenColibri\Starter\Import\generate_import_password;
+use function OpenColibri\Starter\Import\write_project_config;
 
 final class ImportProjectPasswordTest extends TestCase
 {

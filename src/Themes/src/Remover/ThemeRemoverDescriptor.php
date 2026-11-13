@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes\Remover;
+namespace OpenColibri\Starter\Themes\Remover;
 
-use SyliusStarter\Core\Component\RemoverInterface;
-use SyliusStarter\Themes\Attribute\AsThemeRemover;
+use OpenColibri\Starter\Core\Component\RemoverInterface;
+use OpenColibri\Starter\Themes\Attribute\AsThemeRemover;
 
 final readonly class ThemeRemoverDescriptor
 {

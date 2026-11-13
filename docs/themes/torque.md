@@ -83,7 +83,7 @@ orange, set in a squared *Saira* that reads like the lettering of a dashboard.
 
 The screenshots above show a demo catalog of eighteen car parts and pieces of equipment from a fictional parts
 house, in six departments (Brakes & Suspension, Engine & Electrics, Tyres & Wheels, Car Accessories, Hand Tools,
-Workshop Equipment), shipped as the `automotive` dataset of `sylius-starter/datasets`
+Workshop Equipment), shipped as the `automotive` dataset of `open-colibri/starter-datasets`
 (`src/Datasets/datasets/automotive/`: `products.yaml`, `collections.yaml`, and in `media/` a photo of each product
 and of each department, generated with Ollama on a pale grey studio backdrop: the department photos become the
 taxon images of the tiles). Each title ends with its part reference (`— TQ-BD288V`), and the descriptions carry

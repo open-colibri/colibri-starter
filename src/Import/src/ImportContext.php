@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Util\Filesystem;
-use SyliusStarter\Core\Util\Yaml;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Util\Filesystem;
+use OpenColibri\Starter\Core\Util\Yaml;
 
 use function Castor\finder;
 use function Castor\variable;
