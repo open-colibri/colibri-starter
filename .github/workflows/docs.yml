@@ -1,7 +1,7 @@
 name: Publish the documentation
 
 # Asks the website (https://github.com/the-swan-foundation/starter), which builds and serves the documentation
-# website (https://github.com/the-swan-foundation/the-swan-starter-docs), to redeploy, so that
+# website of its docs-site/ folder, to redeploy, so that
 # https://the-swan-foundation.github.io/starter/docs/ follows the docs/ folder of main.
 #
 # Requires a DOCS_DISPATCH_TOKEN secret: a token allowed to create repository
