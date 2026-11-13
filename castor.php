@@ -164,7 +164,7 @@ function docs_up(
     $site = docs_site();
 
     if (!is_dir($site)) {
-        io()->error(sprintf('The documentation website is not in %s. Clone it with "git clone git@github.com:the-swan-foundation/the-swan-starter-docs.git %s", or set DOCS_SITE_DIR.', $site, $site));
+        io()->error(sprintf('The documentation website is not in %s. Clone the website with "git clone git@github.com:the-swan-foundation/starter.git %s" (or pull it), or set DOCS_SITE_DIR.', $site, dirname($site)));
 
         return 1;
     }
@@ -197,11 +197,11 @@ function docs_stop(): int
 }
 
 /**
- * The the-swan-foundation/the-swan-starter-docs repository, cloned next to the main checkout unless DOCS_SITE_DIR says otherwise.
+ * The docs-site/ folder of the the-swan-foundation/starter website, cloned next to the main checkout unless DOCS_SITE_DIR says otherwise.
  */
 function docs_site(): string
 {
-    return getenv('DOCS_SITE_DIR') ?: dirname(main_checkout()) . '/docs';
+    return getenv('DOCS_SITE_DIR') ?: dirname(main_checkout()) . '/starter/docs-site';
 }
 
 /**

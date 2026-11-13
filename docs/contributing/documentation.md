@@ -6,15 +6,14 @@ sidebar:
 ---
 
 The pages of this documentation live in the `docs/` folder of the monorepo. The website that publishes them on
-[the-swan-foundation.github.io/starter/docs](https://the-swan-foundation.github.io/starter/docs/) is built from the
-[the-swan-foundation/the-swan-starter-docs](https://github.com/the-swan-foundation/the-swan-starter-docs) repository with Astro Starlight. The
-[the-swan-foundation/starter](https://github.com/the-swan-foundation/starter) website deploys it under its `/docs/`
-path, and redeploys when `docs/` changes on `main`.
+[the-swan-foundation.github.io/starter/docs](https://the-swan-foundation.github.io/starter/docs/) is built with Astro Starlight
+from the `docs-site/` folder of the [the-swan-foundation/starter](https://github.com/the-swan-foundation/starter) website,
+which deploys it under its `/docs/` path and redeploys when `docs/` changes on `main`.
 
-Clone that repository next to the monorepo, then serve the pages of your checkout:
+Clone the website next to the monorepo, then serve the pages of your checkout:
 
 ```bash
-git clone git@github.com:the-swan-foundation/the-swan-starter-docs.git ../docs
+git clone git@github.com:the-swan-foundation/starter.git ../starter
 castor docs:up               # http://localhost:4321/starter/docs/, follows the changes of docs/
 castor docs:up --port=4322   # on another port
 castor docs:stop
@@ -23,4 +22,4 @@ castor docs:stop
 `castor docs:up` installs the website dependencies on the first run and starts its dev server in the background. It
 serves the `docs/` of the checkout it runs from: run it from a [worktree](worktrees.md) to preview the pages of its
 branch. Only one server runs at a time, so it replaces any server started from another checkout. Set `DOCS_SITE_DIR`
-when the website is cloned elsewhere.
+to the `docs-site/` folder when the website is cloned elsewhere.
