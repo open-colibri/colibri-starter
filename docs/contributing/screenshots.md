@@ -9,7 +9,9 @@ The screenshots of the [theme pages](../themes/index.md) live in `docs/images/`,
 `<theme>-<page>-<viewport>-<scheme>.webp`: pages `homepage`, `product` and `cart`, schemes `light` and `dark` (every
 theme ships both [color schemes](../themes/color-schemes.md)), theme names with hyphens
 (`retro-gaming-cart-mobile-dark.webp`). Each scheme is captured through the emulated system preference, the switcher
-staying in its **Auto** mode.
+staying in its **Auto** mode. When both schemes are captured, the homepage is also saved as
+`<theme>-homepage-<viewport>-split.webp`: the left half of the light page next to the right half of the dark page,
+split by a grey line, so that a single thumbnail shows both schemes.
 
 | Viewport | Size     | Purpose                                                                           |
 |----------|----------|-----------------------------------------------------------------------------------|
