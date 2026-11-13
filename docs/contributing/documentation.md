@@ -6,14 +6,16 @@ sidebar:
 ---
 
 The pages of this documentation live in the `docs/` folder of the monorepo. The website that publishes them on
-[the-swan-foundation.github.io/the-swan-starter-docs](https://the-swan-foundation.github.io/the-swan-starter-docs/) is built from the
-[the-swan-foundation/the-swan-starter-docs](https://github.com/the-swan-foundation/the-swan-starter-docs) repository with Astro Starlight.
+[the-swan-foundation.github.io/starter/docs](https://the-swan-foundation.github.io/starter/docs/) is built from the
+[the-swan-foundation/the-swan-starter-docs](https://github.com/the-swan-foundation/the-swan-starter-docs) repository with Astro Starlight. The
+[the-swan-foundation/starter](https://github.com/the-swan-foundation/starter) website deploys it under its `/docs/`
+path, and redeploys when `docs/` changes on `main`.
 
 Clone that repository next to the monorepo, then serve the pages of your checkout:
 
 ```bash
 git clone git@github.com:the-swan-foundation/the-swan-starter-docs.git ../docs
-castor docs:up               # http://localhost:4321/the-swan-starter-docs/, follows the changes of docs/
+castor docs:up               # http://localhost:4321/starter/docs/, follows the changes of docs/
 castor docs:up --port=4322   # on another port
 castor docs:stop
 ```

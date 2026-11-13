@@ -179,7 +179,7 @@ function docs_up(
     run(['npx', 'astro', 'dev', 'stop'], context: $context->withAllowFailure()->withQuiet());
     run(['npx', 'astro', 'dev', '--background', '--port', (string) $port], context: $context->withEnvironment(['DOCS_DIR' => __DIR__ . '/docs']));
 
-    io()->success(sprintf('The documentation of %s is served on http://localhost:%d/the-swan-starter-docs/ and follows its changes. Run "castor docs:stop" to stop it.', __DIR__, $port));
+    io()->success(sprintf('The documentation of %s is served on http://localhost:%d/starter/docs/ and follows its changes. Run "castor docs:stop" to stop it.', __DIR__, $port));
 
     return 0;
 }
