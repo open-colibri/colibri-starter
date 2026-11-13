@@ -26,7 +26,7 @@ final class AuroraInstaller implements InstallerInterface
 
     public function description(): ?string
     {
-        return 'https://github.com/the-swan-foundation/the-swan-starter/blob/main/docs/themes/aurora.md';
+        return 'https://github.com/open-colibri/colibri-starter/blob/main/docs/themes/aurora.md';
     }
 
     public function __invoke(App $app): void

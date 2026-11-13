@@ -27,7 +27,7 @@ final class CanvasInstaller implements InstallerInterface
 
     public function description(): ?string
     {
-        return 'https://github.com/the-swan-foundation/the-swan-starter/blob/main/docs/themes/canvas.md';
+        return 'https://github.com/open-colibri/colibri-starter/blob/main/docs/themes/canvas.md';
     }
 
     public function __invoke(App $app): void

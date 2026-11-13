@@ -26,7 +26,7 @@ final class PawsInstaller implements InstallerInterface
 
     public function description(): ?string
     {
-        return 'https://github.com/the-swan-foundation/the-swan-starter/blob/main/docs/themes/paws.md';
+        return 'https://github.com/open-colibri/colibri-starter/blob/main/docs/themes/paws.md';
     }
 
     public function __invoke(App $app): void

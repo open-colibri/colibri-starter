@@ -1,11 +1,11 @@
 name: Publish the documentation
 
-# Asks the website (https://github.com/the-swan-foundation/starter), which builds and serves the documentation
+# Asks the website (https://github.com/open-colibri/starter), which builds and serves the documentation
 # website of its docs-site/ folder, to redeploy, so that
-# https://the-swan-foundation.github.io/starter/docs/ follows the docs/ folder of main.
+# https://open-colibri.github.io/starter/docs/ follows the docs/ folder of main.
 #
 # Requires a DOCS_DISPATCH_TOKEN secret: a token allowed to create repository
-# dispatch events (contents: write) on the-swan-foundation/starter.
+# dispatch events (contents: write) on open-colibri/starter.
 
 "on":
     push:
@@ -28,5 +28,5 @@ jobs:
                   curl --fail-with-body -sS -X POST \
                       -H "Accept: application/vnd.github+json" \
                       -H "Authorization: Bearer ${GH_TOKEN}" \
-                      https://api.github.com/repos/the-swan-foundation/starter/dispatches \
+                      https://api.github.com/repos/open-colibri/starter/dispatches \
                       -d '{"event_type": "docs-updated"}'

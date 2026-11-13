@@ -37,10 +37,10 @@ castor sylius:import:dataset:list
 castor sylius:import:shop:create cellar
 ```
 
-Read the [documentation](https://github.com/the-swan-foundation/the-swan-starter/blob/main/docs/import/datasets.md) for usage.
+Read the [documentation](https://github.com/open-colibri/colibri-starter/blob/main/docs/import/datasets.md) for usage.
 
 ## Contributing
 
 This repository is a **read-only split** of the
-[the-swan-foundation/the-swan-starter](https://github.com/the-swan-foundation/the-swan-starter) monorepo.
+[open-colibri/colibri-starter](https://github.com/open-colibri/colibri-starter) monorepo.
 Please open issues and pull requests there.
