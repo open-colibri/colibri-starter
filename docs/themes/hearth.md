@@ -80,7 +80,7 @@ opens an arch onto a living room, and the bands end in the fringe of a woven rug
 
 The screenshots above show a demo catalog of eighteen pieces from a fictional home studio, in six departments
 (Furniture, Lighting, Decoration, Home Linen, Kitchen, Garden), shipped as the `home` dataset of
-`open-colibri/starter-datasets` (`src/Datasets/datasets/home/`: `products.yaml`, `collections.yaml`, and in `media/` a photo
+`opencolibri/starter-datasets` (`src/Datasets/datasets/home/`: `products.yaml`, `collections.yaml`, and in `media/` a photo
 of each piece generated with Ollama, in the same sunlit room with limewashed walls). The pieces echo the homepage (the
 materials of the library, the palette of the moodboard), and descriptions carry what a home buyer looks for:
 dimensions, materials, delivery and care advice. Create a shop from it with the

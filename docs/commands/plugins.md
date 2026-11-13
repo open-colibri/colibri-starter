@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-Install or uninstall Sylius plugins with simple commands. Provided by `open-colibri/starter-plugins`.
+Install or uninstall Sylius plugins with simple commands. Provided by `opencolibri/starter-plugins`.
 
 ## Add plugins
 

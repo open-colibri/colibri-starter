@@ -88,7 +88,7 @@ uncropped.
 
 The screenshots above show a demo catalog of sixteen fictional video games in six genres (Action,
 Role-Playing, Shooters, Racing, Sports, Strategy), from day-one blockbusters and collector's editions to small indies,
-shipped as the `video-games` dataset of `open-colibri/starter-datasets` (`src/Datasets/datasets/video-games/`:
+shipped as the `video-games` dataset of `opencolibri/starter-datasets` (`src/Datasets/datasets/video-games/`:
 `products.yaml`, `collections.yaml`, and in `media/` the cover of each game: a 3:4 key art generated with Ollama, with
 its title printed on it). Descriptions carry what a player looks for: platforms, modes, edition contents, pre-order
 bonuses and age rating. The dataset stays generic, so it suits any store selling video games. Create a shop from it

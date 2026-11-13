@@ -78,7 +78,7 @@ keep it fresh rather than clinical, and the page speaks of rituals, textures and
 
 The screenshots above show a demo catalog of eighteen beauty products and tools from a fictional beauty
 house, on six shelves (Skincare, Makeup, Fragrance, Hair Care, Body & Wellness, Beauty Tools), shipped as the
-`bloom` dataset of `open-colibri/starter-datasets` (`src/Datasets/datasets/bloom/`: `products.yaml`,
+`bloom` dataset of `opencolibri/starter-datasets` (`src/Datasets/datasets/bloom/`: `products.yaml`,
 `collections.yaml`, and in `media/` a photo of each product generated with Ollama, each one on its own pastel
 paper with the flowers or fruits of its formula). The products are the ones of the homepage (the bestsellers
 of the six shelves and the textures of the ritual card), and descriptions carry what a beauty shopper looks

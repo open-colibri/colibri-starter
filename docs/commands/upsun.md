@@ -5,7 +5,7 @@ sidebar:
   order: 5
 ---
 
-Provided by `open-colibri/starter-upsun`.
+Provided by `opencolibri/starter-upsun`.
 
 ## Set up a project where the application is in a subdirectory
 

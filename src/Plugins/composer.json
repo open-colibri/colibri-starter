@@ -1,5 +1,5 @@
 {
-    "name": "open-colibri/starter-plugins",
+    "name": "opencolibri/starter-plugins",
     "description": "Castor tasks to add and remove Sylius plugins (CMS, Invoicing, Refund, Wishlist, reCAPTCHA, ALTCHA...)",
     "type": "library",
     "license": "MIT",
@@ -8,7 +8,7 @@
         "castor",
         "starter"
     ],
-    "homepage": "https://github.com/open-colibri/colibri-starter",
+    "homepage": "https://github.com/opencolibri/colibri-starter",
     "authors": [
         {
             "name": "Loïc Frémont",
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=8.3",
-        "open-colibri/starter-core": "self.version"
+        "opencolibri/starter-core": "self.version"
     },
     "autoload": {
         "psr-4": {

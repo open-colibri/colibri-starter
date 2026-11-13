@@ -1,4 +1,4 @@
-# open-colibri/starter-menu
+# opencolibri/starter-menu
 
 Castor task to remove (and restore) Sylius admin menu items: `sylius:menu:remove`.
 
@@ -7,15 +7,15 @@ Castor task to remove (and restore) Sylius admin menu items: `sylius:menu:remove
 In your Castor project:
 
 ```bash
-castor composer require open-colibri/starter-menu
+castor composer require opencolibri/starter-menu
 ```
 
-Or install every Colibri Starter package at once with `open-colibri/starter`.
+Or install every Colibri Starter package at once with `opencolibri/starter`.
 
-Read the [documentation](https://github.com/open-colibri/colibri-starter/blob/main/docs/commands/admin-menu.md) for usage.
+Read the [documentation](https://github.com/opencolibri/colibri-starter/blob/main/docs/commands/admin-menu.md) for usage.
 
 ## Contributing
 
 This repository is a **read-only split** of the
-[open-colibri/colibri-starter](https://github.com/open-colibri/colibri-starter) monorepo.
+[opencolibri/colibri-starter](https://github.com/opencolibri/colibri-starter) monorepo.
 Please open issues and pull requests there.

@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-The homepage hero is a slot owned by `open-colibri/starter-core`, so that themes and other packages (import...) can
+The homepage hero is a slot owned by `opencolibri/starter-core`, so that themes and other packages (import...) can
 all use it without overwriting each other.
 
 | Who         | Provides | How                                                                                                                                                                                                                                                 |

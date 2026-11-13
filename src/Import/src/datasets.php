@@ -13,7 +13,7 @@ use function Castor\io;
 
 /**
  * A dataset is a catalog (products.yaml, collections.yaml) with its images (media/) and a dataset.yaml (name,
- * description, …), from which shops are created. Built-in datasets come from packages (open-colibri/starter-datasets,
+ * description, …), from which shops are created. Built-in datasets come from packages (opencolibri/starter-datasets,
  * see DatasetDirectories), the others are built by sylius:import:dataset:build into .castor/import/datasets/.
  *
  * In a dataset, an image is a path relative to the dataset directory ("media/<code>.webp"): creating a shop copies

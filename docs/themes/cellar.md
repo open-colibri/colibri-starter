@@ -86,7 +86,7 @@ application, so the whole bottle reaches the page.
 
 The screenshots above show a demo catalog of seventeen wines from fictional estates, in seven regions (Bordeaux,
 Burgundy, Champagne, Rhône Valley, Loire Valley, Alsace, Provence), shipped as the `cellar` dataset of
-`open-colibri/starter-datasets` (`src/Datasets/datasets/cellar/`: `products.yaml`, `collections.yaml`, and in `media/` a
+`opencolibri/starter-datasets` (`src/Datasets/datasets/cellar/`: `products.yaml`, `collections.yaml`, and in `media/` a
 photo of each bottle: its shape, glass, capsule and label, on a transparent background so it stands whole in the
 parchment niches). Descriptions carry the tasting notes, grapes, ageing and serving advice. Create a shop from it with
 the [import package](../import/datasets.md), into the default channel:

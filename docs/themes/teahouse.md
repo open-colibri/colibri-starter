@@ -77,7 +77,7 @@ tea gardens, steeping guides, liquor colours and oxidation levels are part of th
 
 The screenshots above show a demo catalog of sixteen fine teas and pieces of teaware from a fictional tea merchant, on
 six shelves (Green Teas, White & Yellow, Oolong, Black Teas, Pu-erh, Teaware), shipped as the `teahouse` dataset of
-`open-colibri/starter-datasets` (`src/Datasets/datasets/teahouse/`: `products.yaml`, `collections.yaml`, and in `media/` a
+`opencolibri/starter-datasets` (`src/Datasets/datasets/teahouse/`: `products.yaml`, `collections.yaml`, and in `media/` a
 photo of each item generated with Ollama, on the rice paper of the theme, each tea in a tin of its own lacquer colour).
 The teas are the ones of the homepage (the Darjeeling First Flush of the steeping guide, and the six families from
 Silver Needle to the Yunnan pu-erh), and descriptions carry what a tea lover looks for: garden, harvest, cup notes,
