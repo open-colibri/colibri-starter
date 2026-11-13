@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\ImportContext;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\ImportContext;
 use Symfony\Component\Yaml\Yaml;
 
-use function SyliusStarter\Import\persist_project_config;
-use function SyliusStarter\Import\write_project_config;
+use function OpenColibri\Starter\Import\persist_project_config;
+use function OpenColibri\Starter\Import\write_project_config;
 
 final class PersistProjectConfigTest extends TestCase
 {

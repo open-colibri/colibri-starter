@@ -1,6 +1,6 @@
 {
-    "name": "sylius-starter/datasets",
-    "description": "Ready-made demo datasets (products, collections and their images) for the Sylius Starter import package",
+    "name": "open-colibri/starter-datasets",
+    "description": "Ready-made demo datasets (products, collections and their images) for the Colibri Starter import package",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -17,11 +17,11 @@
     ],
     "require": {
         "php": ">=8.3",
-        "sylius-starter/core": "self.version"
+        "open-colibri/starter-core": "self.version"
     },
     "autoload": {
         "psr-4": {
-            "SyliusStarter\\Datasets\\": "src/"
+            "OpenColibri\\Starter\\Datasets\\": "src/"
         },
         "files": [
             "src/functions.php"
@@ -29,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SyliusStarter\\Datasets\\Tests\\": "tests/"
+            "OpenColibri\\Starter\\Datasets\\Tests\\": "tests/"
         }
     },
     "extra": {

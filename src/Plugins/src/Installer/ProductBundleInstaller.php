@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Plugins\Installer;
+namespace OpenColibri\Starter\Plugins\Installer;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Component\InstallerInterface;
-use SyliusStarter\Core\PhpFile;
-use SyliusStarter\Core\Util\Assets;
-use SyliusStarter\Core\Util\Composer;
-use SyliusStarter\Core\Util\Database;
-use SyliusStarter\Core\Util\Docker;
-use SyliusStarter\Core\Util\Symfony;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Component\InstallerInterface;
+use OpenColibri\Starter\Core\PhpFile;
+use OpenColibri\Starter\Core\Util\Assets;
+use OpenColibri\Starter\Core\Util\Composer;
+use OpenColibri\Starter\Core\Util\Database;
+use OpenColibri\Starter\Core\Util\Docker;
+use OpenColibri\Starter\Core\Util\Symfony;
 
 use function Castor\io;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
 /**
  * Progress of the long import steps (image generation and downloads), for the tools that run the tasks in the

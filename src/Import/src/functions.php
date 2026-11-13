@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Service\SyliusService;
-use SyliusStarter\Core\Task\TaskProviderRegistry;
-use SyliusStarter\Core\Util\Docker;
-use SyliusStarter\Core\Util\Fixtures;
-use SyliusStarter\Import\Dataset\DatasetBuilders;
-use SyliusStarter\Import\Tasks\ImportTasks;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Task\TaskProviderRegistry;
+use OpenColibri\Starter\Core\Util\Docker;
+use OpenColibri\Starter\Core\Util\Fixtures;
+use OpenColibri\Starter\Import\Dataset\DatasetBuilders;
+use OpenColibri\Starter\Import\Tasks\ImportTasks;
 
 TaskProviderRegistry::register(
     'import',

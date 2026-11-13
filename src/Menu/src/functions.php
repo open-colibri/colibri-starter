@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Menu;
+namespace OpenColibri\Starter\Menu;
 
-use SyliusStarter\Core\Service\SyliusService;
-use SyliusStarter\Core\Task\TaskProviderRegistry;
-use SyliusStarter\Menu\Tasks\MenuTasks;
+use OpenColibri\Starter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Task\TaskProviderRegistry;
+use OpenColibri\Starter\Menu\Tasks\MenuTasks;
 
 TaskProviderRegistry::register(
     'menu',

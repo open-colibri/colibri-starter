@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes\Installer;
+namespace OpenColibri\Starter\Themes\Installer;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Component\InstallerInterface;
-use SyliusStarter\Core\Storefront\Brand;
-use SyliusStarter\Core\Storefront\Hero;
-use SyliusStarter\Core\Util\Assets;
-use SyliusStarter\Core\Util\Docker;
-use SyliusStarter\Core\Util\Javascript;
-use SyliusStarter\Core\Util\Symfony;
-use SyliusStarter\Core\Util\Yaml;
-use SyliusStarter\Themes\ColorScheme;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Component\InstallerInterface;
+use OpenColibri\Starter\Core\Storefront\Brand;
+use OpenColibri\Starter\Core\Storefront\Hero;
+use OpenColibri\Starter\Core\Util\Assets;
+use OpenColibri\Starter\Core\Util\Docker;
+use OpenColibri\Starter\Core\Util\Javascript;
+use OpenColibri\Starter\Core\Util\Symfony;
+use OpenColibri\Starter\Core\Util\Yaml;
+use OpenColibri\Starter\Themes\ColorScheme;
 
 use function Castor\finder;
 use function Castor\fs;

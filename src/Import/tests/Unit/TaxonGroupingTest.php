@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Import\Tests\CastorContainerTrait;
+use OpenColibri\Starter\Import\Tests\CastorContainerTrait;
 
-use function SyliusStarter\Import\apply_taxon_grouping;
-use function SyliusStarter\Import\build_product_fixtures;
-use function SyliusStarter\Import\build_taxon_fixture;
-use function SyliusStarter\Import\organize_menu_taxons;
-use function SyliusStarter\Import\parse_taxon_grouping;
+use function OpenColibri\Starter\Import\apply_taxon_grouping;
+use function OpenColibri\Starter\Import\build_product_fixtures;
+use function OpenColibri\Starter\Import\build_taxon_fixture;
+use function OpenColibri\Starter\Import\organize_menu_taxons;
+use function OpenColibri\Starter\Import\parse_taxon_grouping;
 
 final class TaxonGroupingTest extends TestCase
 {

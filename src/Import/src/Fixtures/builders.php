@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Core\Util\Fixtures as CoreFixtures;
+use OpenColibri\Starter\Core\Util\Fixtures as CoreFixtures;
 
 use function Castor\io;
 

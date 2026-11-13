@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Upsun\Tasks;
+namespace OpenColibri\Starter\Upsun\Tasks;
 
 use Castor\Attribute\AsOption;
 use Castor\Attribute\AsTask;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Util\Runner;
-use SyliusStarter\Upsun\Util\Upsun;
-use SyliusStarter\Upsun\Util\UpsunCli;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Util\Runner;
+use OpenColibri\Starter\Upsun\Util\Upsun;
+use OpenColibri\Starter\Upsun\Util\UpsunCli;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\Dotenv\Exception\FormatException;

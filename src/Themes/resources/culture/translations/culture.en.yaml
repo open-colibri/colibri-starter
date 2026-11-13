@@ -42,7 +42,7 @@ culture:
             title: 'Ideas for every taste'
     footer:
         tagline: 'Books, board games, video games, instruments and collectibles: all of culture, picked by enthusiasts.'
-        notice: 'Culture & Co is a fictional cultural store, made for the Sylius Starter demo.'
+        notice: 'Culture & Co is a fictional cultural store, made for the Colibri Starter demo.'
         services:
             delivery:
                 title: 'Free delivery'

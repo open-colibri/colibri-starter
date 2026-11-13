@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes\Installer;
+namespace OpenColibri\Starter\Themes\Installer;
 
 use Castor\Docker\Installer\Input;
 use Castor\Docker\Installer\InputType;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Installer\SyliusInstallerExtensionInterface;
-use SyliusStarter\Themes\Themes;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Installer\SyliusInstallerExtensionInterface;
+use OpenColibri\Starter\Themes\Themes;
 
 use function Castor\run;
 

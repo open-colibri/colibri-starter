@@ -5,13 +5,13 @@ sidebar:
   order: 2
 ---
 
-The shop logo is a slot owned by `sylius-starter/core`, so that themes and other packages (import...) can all use it
+The shop logo is a slot owned by `open-colibri/starter-core`, so that themes and other packages (import...) can all use it
 without overwriting each other. Before it, the import shipped `templates/shop/shared/layout/header/logo.html.twig`: a
 theme installer overwrote it and the remover of every other theme deleted it.
 
 | Who         | Provides | How                                                                                                                                                                                                    |
 |-------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Core        | the slot | `SyliusStarter\Core\Storefront\Brand::install($app)` (idempotent) generates the `storefront_brand()` Twig function and renders the logo in the header when no theme is active (`config/sylius/storefront/brand.yaml`). |
+| Core        | the slot | `OpenColibri\Starter\Core\Storefront\Brand::install($app)` (idempotent) generates the `storefront_brand()` Twig function and renders the logo in the header when no theme is active (`config/sylius/storefront/brand.yaml`). |
 | A theme     | markup   | reads `storefront_brand()` in `templates/shop/shared/layout/brand/identity.html.twig`, with its own artwork as fallback.                                                                              |
 | A package   | data     | generates a service implementing `App\Storefront\Brand\BrandContributorInterface` (autoconfigured).                                                                                                   |
 

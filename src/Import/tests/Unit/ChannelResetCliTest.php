@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
-use function SyliusStarter\Import\import_channel_reset_cli;
-use function SyliusStarter\Import\resolve_import_shop_target;
+use function OpenColibri\Starter\Import\import_channel_reset_cli;
+use function OpenColibri\Starter\Import\resolve_import_shop_target;
 
 final class ChannelResetCliTest extends TestCase
 {

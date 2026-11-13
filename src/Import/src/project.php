@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Import\Extension\ImportExtensions;
+use OpenColibri\Starter\Import\Extension\ImportExtensions;
 use Symfony\Component\Yaml\Yaml;
 
 use function Castor\io;

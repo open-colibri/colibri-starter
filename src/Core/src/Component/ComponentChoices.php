@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Component;
+namespace OpenColibri\Starter\Core\Component;
 
 final class ComponentChoices
 {

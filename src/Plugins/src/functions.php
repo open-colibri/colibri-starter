@@ -2,41 +2,41 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Plugins;
+namespace OpenColibri\Starter\Plugins;
 
 use Castor\Attribute\AsListener;
 use Castor\Event\AfterBootEvent;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Component\CallableInstaller;
-use SyliusStarter\Core\Component\CallableRemover;
-use SyliusStarter\Core\Component\ComponentResolver;
-use SyliusStarter\Core\Service\SyliusService;
-use SyliusStarter\Core\Task\TaskProviderRegistry;
-use SyliusStarter\Plugins\Attribute\AsPluginInstaller;
-use SyliusStarter\Plugins\Attribute\AsPluginRemover;
-use SyliusStarter\Plugins\Installer\AiDevToolsInstaller;
-use SyliusStarter\Plugins\Installer\AltchaInstaller;
-use SyliusStarter\Plugins\Installer\BugSnagInstaller;
-use SyliusStarter\Plugins\Installer\CmsInstaller;
-use SyliusStarter\Plugins\Installer\GdprInstaller;
-use SyliusStarter\Plugins\Installer\InvoicingInstaller;
-use SyliusStarter\Plugins\Installer\MediaInstaller;
-use SyliusStarter\Plugins\Installer\PluginInstallerDescriptor;
-use SyliusStarter\Plugins\Installer\ProductBundleInstaller;
-use SyliusStarter\Plugins\Installer\RecaptchaInstaller;
-use SyliusStarter\Plugins\Installer\RefundInstaller;
-use SyliusStarter\Plugins\Installer\WishlistInstaller;
-use SyliusStarter\Plugins\Remover\AiDevToolsRemover;
-use SyliusStarter\Plugins\Remover\AltchaRemover;
-use SyliusStarter\Plugins\Remover\ApiRemover;
-use SyliusStarter\Plugins\Remover\BugSnagRemover;
-use SyliusStarter\Plugins\Remover\CmsRemover;
-use SyliusStarter\Plugins\Remover\GdprRemover;
-use SyliusStarter\Plugins\Remover\InvoicingRemover;
-use SyliusStarter\Plugins\Remover\PluginRemoverDescriptor;
-use SyliusStarter\Plugins\Remover\RecaptchaRemover;
-use SyliusStarter\Plugins\Remover\WishlistRemover;
-use SyliusStarter\Plugins\Tasks\PluginTasks;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Component\CallableInstaller;
+use OpenColibri\Starter\Core\Component\CallableRemover;
+use OpenColibri\Starter\Core\Component\ComponentResolver;
+use OpenColibri\Starter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Task\TaskProviderRegistry;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginInstaller;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginRemover;
+use OpenColibri\Starter\Plugins\Installer\AiDevToolsInstaller;
+use OpenColibri\Starter\Plugins\Installer\AltchaInstaller;
+use OpenColibri\Starter\Plugins\Installer\BugSnagInstaller;
+use OpenColibri\Starter\Plugins\Installer\CmsInstaller;
+use OpenColibri\Starter\Plugins\Installer\GdprInstaller;
+use OpenColibri\Starter\Plugins\Installer\InvoicingInstaller;
+use OpenColibri\Starter\Plugins\Installer\MediaInstaller;
+use OpenColibri\Starter\Plugins\Installer\PluginInstallerDescriptor;
+use OpenColibri\Starter\Plugins\Installer\ProductBundleInstaller;
+use OpenColibri\Starter\Plugins\Installer\RecaptchaInstaller;
+use OpenColibri\Starter\Plugins\Installer\RefundInstaller;
+use OpenColibri\Starter\Plugins\Installer\WishlistInstaller;
+use OpenColibri\Starter\Plugins\Remover\AiDevToolsRemover;
+use OpenColibri\Starter\Plugins\Remover\AltchaRemover;
+use OpenColibri\Starter\Plugins\Remover\ApiRemover;
+use OpenColibri\Starter\Plugins\Remover\BugSnagRemover;
+use OpenColibri\Starter\Plugins\Remover\CmsRemover;
+use OpenColibri\Starter\Plugins\Remover\GdprRemover;
+use OpenColibri\Starter\Plugins\Remover\InvoicingRemover;
+use OpenColibri\Starter\Plugins\Remover\PluginRemoverDescriptor;
+use OpenColibri\Starter\Plugins\Remover\RecaptchaRemover;
+use OpenColibri\Starter\Plugins\Remover\WishlistRemover;
+use OpenColibri\Starter\Plugins\Tasks\PluginTasks;
 
 TaskProviderRegistry::register(
     'plugins',

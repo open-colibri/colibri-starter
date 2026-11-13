@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes\Tasks;
+namespace OpenColibri\Starter\Themes\Tasks;
 
 use Castor\Attribute\AsArgument;
 use Castor\Attribute\AsOption;
 use Castor\Attribute\AsTask;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Component\ComponentChoices;
-use SyliusStarter\Core\Util\Assets;
-use SyliusStarter\Core\Util\Docker;
-use SyliusStarter\Core\Util\Symfony;
-use SyliusStarter\Themes\ThemeBundle;
-use SyliusStarter\Themes\Themes;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Component\ComponentChoices;
+use OpenColibri\Starter\Core\Util\Assets;
+use OpenColibri\Starter\Core\Util\Docker;
+use OpenColibri\Starter\Core\Util\Symfony;
+use OpenColibri\Starter\Themes\ThemeBundle;
+use OpenColibri\Starter\Themes\Themes;
 
 use function Castor\io;
 

@@ -1,5 +1,5 @@
 {
-    "name": "sylius-starter/upsun",
+    "name": "open-colibri/starter-upsun",
     "description": "Castor tasks to set up, check and deploy a Sylius application on Upsun",
     "type": "library",
     "license": "MIT",
@@ -17,14 +17,14 @@
     ],
     "require": {
         "php": ">=8.3",
-        "sylius-starter/core": "self.version",
+        "open-colibri/starter-core": "self.version",
         "symfony/dotenv": "^7.4|^8.0",
         "symfony/process": "^7.4|^8.0",
         "symfony/yaml": "^7.4|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "SyliusStarter\\Upsun\\": "src/"
+            "OpenColibri\\Starter\\Upsun\\": "src/"
         },
         "files": [
             "src/functions.php"
@@ -32,7 +32,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SyliusStarter\\Upsun\\Tests\\": "tests/"
+            "OpenColibri\\Starter\\Upsun\\Tests\\": "tests/"
         }
     },
     "extra": {

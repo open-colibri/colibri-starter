@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Tests\Unit;
+namespace OpenColibri\Starter\Core\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 
 final class AppTest extends TestCase
 {
     public function testHostnameIsApexWhenSubdomainIsOmitted(): void
     {
-        $app = new App('app', 'app', 'sylius-starter-sk.test');
+        $app = new App('app', 'app', 'colibri-starter-sk.test');
 
         static::assertNull($app->subdomain());
-        static::assertSame('sylius-starter-sk.test', $app->hostname());
+        static::assertSame('colibri-starter-sk.test', $app->hostname());
     }
 
     public function testHostnamePrefixedWithSubdomain(): void
     {
-        $app = new App('app', 'app', 'sylius-starter-sk.test', 'shop');
+        $app = new App('app', 'app', 'colibri-starter-sk.test', 'shop');
 
         static::assertSame('shop', $app->subdomain());
-        static::assertSame('shop.sylius-starter-sk.test', $app->hostname());
+        static::assertSame('shop.colibri-starter-sk.test', $app->hostname());
     }
 
     public function testHostnameIsNullWithoutDomain(): void

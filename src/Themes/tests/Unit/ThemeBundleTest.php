@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes\Tests\Unit;
+namespace OpenColibri\Starter\Themes\Tests\Unit;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Themes\ThemeBundle;
+use OpenColibri\Starter\Themes\ThemeBundle;
 
 #[CoversClass(ThemeBundle::class)]
 final class ThemeBundleTest extends TestCase
@@ -76,7 +76,7 @@ final class ThemeBundleTest extends TestCase
     {
         // sylius/theme-bundle rejects underscores in theme names, and the hook renderer reads the prefix from it.
         static::assertSame('retro-gaming:', ThemeBundle::hookPrefix('retro_gaming'));
-        static::assertSame('sylius-starter/retro-gaming', ThemeBundle::themeName('retro_gaming'));
+        static::assertSame('open-colibri/retro-gaming', ThemeBundle::themeName('retro_gaming'));
         static::assertMatchesRegularExpression('/^[a-zA-Z0-9\-]+\/[a-zA-Z0-9\-]+$/', ThemeBundle::themeName('retro_gaming'));
     }
 }

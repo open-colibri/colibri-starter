@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Feature;
+namespace OpenColibri\Starter\Core\Feature;
 
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 
 interface FeatureInterface
 {

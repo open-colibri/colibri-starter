@@ -6,7 +6,7 @@ sidebar:
 ---
 
 Import products, collections, images and prices from an **AI-generated catalog**, or load YAML produced by an external
-fetch step into Sylius fixtures. Provided by `sylius-starter/import`.
+fetch step into Sylius fixtures. Provided by `open-colibri/starter-import`.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ You can also create a .castor/.env.local file for your sensitive values or local
 2. [Generate the Sylius fixtures](fixtures.md) from that YAML, then load them.
 
 To reuse a catalog, build it as a [dataset](datasets.md) instead (catalog and images, downloadable as a zip), or pick a
-ready-made one from `sylius-starter/datasets`, then create shops from it with `castor sylius:import:shop:create`.
+ready-made one from `open-colibri/starter-datasets`, then create shops from it with `castor sylius:import:shop:create`.
 
 ## Managing imported shops
 

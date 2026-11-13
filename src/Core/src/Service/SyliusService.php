@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Service;
+namespace OpenColibri\Starter\Core\Service;
 
 use Castor\Attribute\AsRawTokens;
 use Castor\Attribute\AsTask;
@@ -11,10 +11,10 @@ use Castor\Docker\Service\MySQLService;
 use Castor\Docker\Service\PhpMode;
 use Castor\Docker\Service\PostgresService;
 use Castor\Docker\Service\SymfonyService;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Task\TaskProviderRegistry;
-use SyliusStarter\Core\Util\Assets;
-use SyliusStarter\Core\Util\Fixtures;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Task\TaskProviderRegistry;
+use OpenColibri\Starter\Core\Util\Assets;
+use OpenColibri\Starter\Core\Util\Fixtures;
 
 use function Castor\context;
 use function Castor\Docker\docker_compose;
@@ -46,7 +46,7 @@ class SyliusService extends SymfonyService
             yield $task;
         }
 
-        // Tasks contributed by the installed sylius-starter/* packages
+        // Tasks contributed by the installed open-colibri/starter-* packages
         yield from TaskProviderRegistry::tasksFor($this);
 
         yield from $this->tasks;

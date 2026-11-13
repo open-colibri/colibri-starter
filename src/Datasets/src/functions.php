@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Datasets;
+namespace OpenColibri\Starter\Datasets;
 
-use SyliusStarter\Core\Dataset\DatasetDirectories;
+use OpenColibri\Starter\Core\Dataset\DatasetDirectories;
 
 DatasetDirectories::register('datasets', \dirname(__DIR__) . '/datasets');

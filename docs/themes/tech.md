@@ -72,7 +72,7 @@ the system monospace font for labels, so no extra font file is needed.
 
 The screenshots above show a demo catalog of sixteen laptops, smartphones, headphones, wearables, smart home devices
 and accessories from fictional brands, in six departments (Laptops, Smartphones, Audio, Wearables, Smart Home,
-Accessories), shipped as the `tech` dataset of `sylius-starter/datasets` (`src/Datasets/datasets/tech/`:
+Accessories), shipped as the `tech` dataset of `open-colibri/starter-datasets` (`src/Datasets/datasets/tech/`:
 `products.yaml`, `collections.yaml`, and in `media/` a studio photo of each device generated with Ollama, on a brushed
 aluminium backdrop with a signal-orange rim light). Descriptions carry what a gadget buyer looks for: key specs,
 battery life, what is in the box and the warranty. Create a shop from it with the

@@ -2,26 +2,26 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tasks;
+namespace OpenColibri\Starter\Import\Tasks;
 
 use Castor\Attribute\AsArgument;
 use Castor\Attribute\AsOption;
 use Castor\Attribute\AsTask;
 use Castor\Api\Attribute\AsApi;
 use Castor\Exception\ProblemException;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\Dataset\DatasetBuilders;
-use SyliusStarter\Import\ImportContext;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\Dataset\DatasetBuilders;
+use OpenColibri\Starter\Import\ImportContext;
 
 use function Castor\io;
-use function SyliusStarter\Import\build_import_dataset;
-use function SyliusStarter\Import\create_import_shop_from_dataset;
-use function SyliusStarter\Import\delete_import_dataset;
-use function SyliusStarter\Import\export_import_dataset;
-use function SyliusStarter\Import\list_import_datasets;
-use function SyliusStarter\Import\normalize_import_name;
-use function SyliusStarter\Import\store_import_dataset_images;
-use function SyliusStarter\Import\write_import_dataset_list;
+use function OpenColibri\Starter\Import\build_import_dataset;
+use function OpenColibri\Starter\Import\create_import_shop_from_dataset;
+use function OpenColibri\Starter\Import\delete_import_dataset;
+use function OpenColibri\Starter\Import\export_import_dataset;
+use function OpenColibri\Starter\Import\list_import_datasets;
+use function OpenColibri\Starter\Import\normalize_import_name;
+use function OpenColibri\Starter\Import\store_import_dataset_images;
+use function OpenColibri\Starter\Import\write_import_dataset_list;
 
 /**
  * Datasets (catalog + images) and the shops created from them. See docs/import/datasets.md.

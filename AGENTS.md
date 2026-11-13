@@ -172,7 +172,7 @@ root with `.products-grid div:has(> a.link-reset)` (each theme does it in
 
 The code is split into packages under `src/<Package>/` (`composer.json`, `src/`, `tests/`, `resources/`). The root
 `composer.json` is generated: after changing a package `composer.json`, run `castor monorepo:merge`, then check with
-`castor monorepo:validate`. A package must never use another task package's namespace, only `SyliusStarter\Core`.
+`castor monorepo:validate`. A package must never use another task package's namespace, only `OpenColibri\Starter\Core`.
 
 ## Storefront slots
 

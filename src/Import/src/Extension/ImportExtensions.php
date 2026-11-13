@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Extension;
+namespace OpenColibri\Starter\Import\Extension;
 
 final class ImportExtensions
 {

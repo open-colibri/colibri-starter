@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes;
+namespace OpenColibri\Starter\Themes;
 
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 use Symfony\Component\Finder\Finder;
 
 use function Castor\fs;

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Import\ImportContext;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Import\ImportContext;
 
-use function SyliusStarter\Import\import_list_shop_hostname;
-use function SyliusStarter\Import\resolve_import_shop_subdomain;
-use function SyliusStarter\Import\shop_hostname;
+use function OpenColibri\Starter\Import\import_list_shop_hostname;
+use function OpenColibri\Starter\Import\resolve_import_shop_subdomain;
+use function OpenColibri\Starter\Import\shop_hostname;
 
 final class ImportShopSubdomainTest extends TestCase
 {
@@ -22,7 +22,7 @@ final class ImportShopSubdomainTest extends TestCase
     public function testEmptyStringUsesApexDomain(): void
     {
         static::assertNull(resolve_import_shop_subdomain('', 'cocorico'));
-        static::assertSame('sylius-starter-sk.test', shop_hostname('sylius-starter-sk.test', null));
+        static::assertSame('colibri-starter-sk.test', shop_hostname('colibri-starter-sk.test', null));
     }
 
     public function testExplicitSubdomainIsTrimmed(): void
@@ -33,11 +33,11 @@ final class ImportShopSubdomainTest extends TestCase
     public function testImportListShopHostnameUsesAppDomainAndSlug(): void
     {
         $previous = ImportContext::tryCurrent();
-        ImportContext::setCurrent(new ImportContext(new App('app', 'app', 'sylius-starter-sk.test'), 'app'));
+        ImportContext::setCurrent(new ImportContext(new App('app', 'app', 'colibri-starter-sk.test'), 'app'));
 
         try {
             static::assertSame(
-                'cocorico.sylius-starter-sk.test',
+                'cocorico.colibri-starter-sk.test',
                 import_list_shop_hostname('cocorico'),
             );
         } finally {

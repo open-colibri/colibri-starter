@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Plugins\Tests\Unit\Tasks;
+namespace OpenColibri\Starter\Plugins\Tests\Unit\Tasks;
 
 use Castor\Container;
 use Castor\Runner\Parallel\JobRegistry;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\Component\CallableInstaller;
-use SyliusStarter\Core\Component\CallableRemover;
-use SyliusStarter\Plugins\Installer\CmsInstaller;
-use SyliusStarter\Plugins\Installer\ProductBundleInstaller;
-use SyliusStarter\Plugins\Remover\ApiRemover;
-use SyliusStarter\Plugins\Tasks\PluginTasks;
+use OpenColibri\Starter\Core\Component\CallableInstaller;
+use OpenColibri\Starter\Core\Component\CallableRemover;
+use OpenColibri\Starter\Plugins\Installer\CmsInstaller;
+use OpenColibri\Starter\Plugins\Installer\ProductBundleInstaller;
+use OpenColibri\Starter\Plugins\Remover\ApiRemover;
+use OpenColibri\Starter\Plugins\Tasks\PluginTasks;
 use Symfony\Component\Console\Exception\MissingInputException;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;

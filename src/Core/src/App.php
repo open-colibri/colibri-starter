@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core;
+namespace OpenColibri\Starter\Core;
 
 final readonly class App
 {

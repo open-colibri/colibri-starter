@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Upsun\Tests\Unit\Tasks;
+namespace OpenColibri\Starter\Upsun\Tests\Unit\Tasks;
 
 use Castor\Attribute\AsTask;
 use Castor\Container;
 use Castor\Runner\Parallel\JobRegistry;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Upsun\Tasks\UpsunTasks;
-use SyliusStarter\Upsun\Util\UpsunCli;
+use OpenColibri\Starter\Upsun\Tasks\UpsunTasks;
+use OpenColibri\Starter\Upsun\Util\UpsunCli;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Style\SymfonyStyle;

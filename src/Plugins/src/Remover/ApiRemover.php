@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Plugins\Remover;
+namespace OpenColibri\Starter\Plugins\Remover;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Component\RemoverInterface;
-use SyliusStarter\Core\Util\Composer;
-use SyliusStarter\Core\Util\Symfony;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Component\RemoverInterface;
+use OpenColibri\Starter\Core\Util\Composer;
+use OpenColibri\Starter\Core\Util\Symfony;
 
 use function Castor\fs;
 use function Castor\io;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Plugins;
+namespace OpenColibri\Starter\Plugins;
 
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 
 use function Castor\finder;
 use function Castor\fs;

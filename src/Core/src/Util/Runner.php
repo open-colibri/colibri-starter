@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Util;
+namespace OpenColibri\Starter\Core\Util;
 
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 use Symfony\Component\Process\Process;
 
 use function Castor\context;
@@ -14,18 +14,18 @@ use function Castor\run;
 /**
  * Runs a command against the Sylius application.
  *
- * SYLIUS_STARTER_RUNNER selects where:
+ * COLIBRI_STARTER_RUNNER selects where:
  * - "docker" (default): in the "{app}-builder" Docker Compose service;
  * - "local": directly in the application directory, with the PHP and Composer
- *   binaries from SYLIUS_STARTER_PHP_BINARY / SYLIUS_STARTER_COMPOSER_BINARY.
+ *   binaries from COLIBRI_STARTER_PHP_BINARY / COLIBRI_STARTER_COMPOSER_BINARY.
  *   Used when Castor itself runs next to the application (no Docker in production,
  *   or inside a container that already has the application runtime).
  */
 final readonly class Runner
 {
-    public const string MODE_ENV = 'SYLIUS_STARTER_RUNNER';
-    public const string PHP_BINARY_ENV = 'SYLIUS_STARTER_PHP_BINARY';
-    public const string COMPOSER_BINARY_ENV = 'SYLIUS_STARTER_COMPOSER_BINARY';
+    public const string MODE_ENV = 'COLIBRI_STARTER_RUNNER';
+    public const string PHP_BINARY_ENV = 'COLIBRI_STARTER_PHP_BINARY';
+    public const string COMPOSER_BINARY_ENV = 'COLIBRI_STARTER_COMPOSER_BINARY';
 
     public const string MODE_DOCKER = 'docker';
     public const string MODE_LOCAL = 'local';

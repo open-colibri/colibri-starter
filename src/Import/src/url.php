@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
 /**
  * Normalise une URL ou un hostname d'import en base URL + host.

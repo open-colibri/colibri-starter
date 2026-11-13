@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Storefront\Brand;
-use SyliusStarter\Core\Storefront\Hero;
-use SyliusStarter\Core\Util\Database;
-use SyliusStarter\Import\Extension\ImportExtensions;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Storefront\Brand;
+use OpenColibri\Starter\Core\Storefront\Hero;
+use OpenColibri\Starter\Core\Util\Database;
+use OpenColibri\Starter\Import\Extension\ImportExtensions;
 use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Import\Dto\TaxonGroupingExtraction;
+use OpenColibri\Starter\Import\Dto\TaxonGroupingExtraction;
 use Symfony\AI\Platform\Message\Message;
 use Symfony\AI\Platform\Message\MessageBag;
 use Symfony\AI\Platform\StructuredOutput\ResponseFormatFactory;

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Extension;
+namespace OpenColibri\Starter\Import\Extension;
 
-use SyliusStarter\Core\App;
+use OpenColibri\Starter\Core\App;
 
 /**
  * Lets a project hook into the shop import (castor sylius:import:*) without the starter shipping its data:

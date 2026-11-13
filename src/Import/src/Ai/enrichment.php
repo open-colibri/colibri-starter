@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
-use SyliusStarter\Import\Dto\CollectionEntry;
-use SyliusStarter\Import\Dto\CollectionExtraction;
-use SyliusStarter\Import\Dto\ProductSelectionEntry;
-use SyliusStarter\Import\Dto\ProductSelectionExtraction;
-use SyliusStarter\Import\Dto\ProductTaxonAssignmentEntry;
-use SyliusStarter\Import\Dto\ProductTaxonAssignmentExtraction;
+use OpenColibri\Starter\Import\Dto\CollectionEntry;
+use OpenColibri\Starter\Import\Dto\CollectionExtraction;
+use OpenColibri\Starter\Import\Dto\ProductSelectionEntry;
+use OpenColibri\Starter\Import\Dto\ProductSelectionExtraction;
+use OpenColibri\Starter\Import\Dto\ProductTaxonAssignmentEntry;
+use OpenColibri\Starter\Import\Dto\ProductTaxonAssignmentExtraction;
 use Symfony\AI\Platform\Message\Message;
 use Symfony\AI\Platform\Message\MessageBag;
 use Symfony\AI\Platform\StructuredOutput\ResponseFormatFactory;

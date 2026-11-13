@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Tests\Integration;
+namespace OpenColibri\Starter\Tests\Integration;
 
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\Finder;
 
 /**
- * The shop identity (logo) is a slot owned by sylius-starter/core. These checks
+ * The shop identity (logo) is a slot owned by open-colibri/starter-core. These checks
  * keep the import from shipping templates at paths themes write to: a theme
  * installer overwrites them and a theme remover deletes them.
  */

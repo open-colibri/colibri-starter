@@ -12,7 +12,7 @@ Installing a theme installs both schemes: there is nothing to configure.
 ## How it works
 
 The switcher is shared by every theme (`src/Themes/color_scheme/`, installed by
-`SyliusStarter\Themes\ColorScheme`):
+`OpenColibri\Starter\Themes\ColorScheme`):
 
 - a script in `<head>` (`sylius_shop.base#stylesheets` hook, before the stylesheets, so the page is painted in the
   right scheme) sets `<html data-bs-theme="light|dark">` and `<html data-color-scheme-mode="auto|light|dark">`,

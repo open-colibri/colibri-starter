@@ -125,7 +125,7 @@ jobs:
             -   name: Install the package in isolation
                 working-directory: ${{ matrix.package.path }}
                 run: |
-                    composer config repositories.monorepo '{"type": "path", "url": "../*", "options": {"symlink": false, "versions": {"sylius-starter/core": "dev-main"}}}'
+                    composer config repositories.monorepo '{"type": "path", "url": "../*", "options": {"symlink": false, "versions": {"open-colibri/starter-core": "dev-main"}}}'
                     composer config minimum-stability dev
                     composer config prefer-stable true
                     composer require --dev --no-update "phpunit/phpunit:^13.2" "jolicode/castor:^1.6"

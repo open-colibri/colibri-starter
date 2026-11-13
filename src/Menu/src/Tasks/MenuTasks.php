@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Menu\Tasks;
+namespace OpenColibri\Starter\Menu\Tasks;
 
 use Castor\Attribute\AsOption;
 use Castor\Attribute\AsRawTokens;
 use Castor\Attribute\AsTask;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\PhpFile;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\PhpFile;
 
 use function Castor\fs;
 use function Castor\io;

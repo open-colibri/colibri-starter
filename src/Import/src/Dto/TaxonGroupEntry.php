@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Dto;
+namespace OpenColibri\Starter\Import\Dto;
 
 final class TaxonGroupEntry
 {

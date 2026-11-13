@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes\Installer;
+namespace OpenColibri\Starter\Themes\Installer;
 
-use SyliusStarter\Core\Component\InstallerInterface;
-use SyliusStarter\Themes\Attribute\AsThemeInstaller;
+use OpenColibri\Starter\Core\Component\InstallerInterface;
+use OpenColibri\Starter\Themes\Attribute\AsThemeInstaller;
 
 final readonly class ThemeInstallerDescriptor
 {

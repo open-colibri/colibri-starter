@@ -7,7 +7,7 @@ sidebar:
 
 ## The App instance
 
-Installers, removers and tasks receive the targeted Sylius application as a `SyliusStarter\Core\App` instance:
+Installers, removers and tasks receive the targeted Sylius application as a `OpenColibri\Starter\Core\App` instance:
 
 | Method        | Returns                                                                            |
 |---------------|------------------------------------------------------------------------------------|
@@ -58,11 +58,11 @@ does not cover.
 ## Runner
 
 `Docker::run()` (and the import tasks) run their commands in the `{app}-builder` Docker Compose service by default.
-Set `SYLIUS_STARTER_RUNNER=local` to run them directly in the application directory instead, for instance when Castor
+Set `COLIBRI_STARTER_RUNNER=local` to run them directly in the application directory instead, for instance when Castor
 runs on a server without Docker or inside a container that already has the application runtime:
 
 | Variable                         | Default    | Description                                                  |
 |----------------------------------|------------|--------------------------------------------------------------|
-| `SYLIUS_STARTER_RUNNER`          | `docker`   | `docker` or `local`                                          |
-| `SYLIUS_STARTER_PHP_BINARY`      | `php`      | PHP binary used for `php …` and `bin/console …` commands     |
-| `SYLIUS_STARTER_COMPOSER_BINARY` | `composer` | Composer command used for `composer …` commands              |
+| `COLIBRI_STARTER_RUNNER`          | `docker`   | `docker` or `local`                                          |
+| `COLIBRI_STARTER_PHP_BINARY`      | `php`      | PHP binary used for `php …` and `bin/console …` commands     |
+| `COLIBRI_STARTER_COMPOSER_BINARY` | `composer` | Composer command used for `composer …` commands              |

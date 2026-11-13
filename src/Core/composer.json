@@ -1,6 +1,6 @@
 {
-    "name": "sylius-starter/core",
-    "description": "Sylius Starter core: Castor plugin providing the Sylius Docker service, installer and shared utilities",
+    "name": "open-colibri/starter-core",
+    "description": "Colibri Starter core: Castor plugin providing the Sylius Docker service, installer and shared utilities",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SyliusStarter\\Core\\": "src/"
+            "OpenColibri\\Starter\\Core\\": "src/"
         },
         "files": [
             "src/Installer/functions.php"
@@ -30,7 +30,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "SyliusStarter\\Core\\Tests\\": "tests/"
+            "OpenColibri\\Starter\\Core\\Tests\\": "tests/"
         }
     },
     "extra": {

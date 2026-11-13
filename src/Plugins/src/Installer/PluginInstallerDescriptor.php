@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Plugins\Installer;
+namespace OpenColibri\Starter\Plugins\Installer;
 
-use SyliusStarter\Core\Component\InstallerInterface;
-use SyliusStarter\Plugins\Attribute\AsPluginInstaller;
+use OpenColibri\Starter\Core\Component\InstallerInterface;
+use OpenColibri\Starter\Plugins\Attribute\AsPluginInstaller;
 
 final readonly class PluginInstallerDescriptor
 {

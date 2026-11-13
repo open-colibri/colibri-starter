@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Tests\Unit\Storefront;
+namespace OpenColibri\Starter\Core\Tests\Unit\Storefront;
 
 use Castor\Container;
 use Castor\Runner\Parallel\JobRegistry;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Storefront\Brand;
-use SyliusStarter\Core\Storefront\Hero;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Storefront\Brand;
+use OpenColibri\Starter\Core\Storefront\Hero;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Filesystem\Filesystem;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Tests\Integration;
+namespace OpenColibri\Starter\Tests\Integration;
 
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\Finder;
 
 /**
- * The homepage hero is a slot owned by sylius-starter/core. These checks keep
+ * The homepage hero is a slot owned by open-colibri/starter-core. These checks keep
  * packages from fighting over it again (same template path, same hookable).
  */
 #[CoversNothing]

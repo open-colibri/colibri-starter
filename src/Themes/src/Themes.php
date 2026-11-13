@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Themes;
+namespace OpenColibri\Starter\Themes;
 
-use SyliusStarter\Core\Component\InstallerInterface;
-use SyliusStarter\Core\Component\RemoverInterface;
+use OpenColibri\Starter\Core\Component\InstallerInterface;
+use OpenColibri\Starter\Core\Component\RemoverInterface;
 
 final class Themes
 {

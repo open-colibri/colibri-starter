@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-Install a storefront theme in your Sylius application. Provided by `sylius-starter/themes`. Only one theme can be
+Install a storefront theme in your Sylius application. Provided by `open-colibri/starter-themes`. Only one theme can be
 active: installing a theme automatically removes any other previously installed theme. To give each channel its own
 theme, see [one theme per channel](#one-theme-per-channel).
 
@@ -36,7 +36,7 @@ The channel theme can also be picked in the admin (channel form, **Theme** field
 
 | What | Where |
 |------|-------|
-| Templates and translations | `themes/<theme>/` (theme `sylius-starter/<theme>`, hyphens for underscores: `sylius-starter/retro-gaming`) |
+| Templates and translations | `themes/<theme>/` (theme `open-colibri/<theme>`, hyphens for underscores: `open-colibri/retro-gaming`) |
 | Twig hooks | `config/sylius/twig_hooks/themes/<theme>/`, hook names prefixed with `<theme>:` (`retro-gaming:`) |
 | Styles | `assets/themes/<theme>/`, built as the `theme-<theme>` Encore entry, linked after the app styles |
 | Other config (image filters…) | `config/`, shared by every channel |
@@ -46,7 +46,7 @@ the hookables of several hook names shallowly, so the generated hooks are comple
 is merged with the app definition at install time. Reinstall the themes after changing the hooks they override.
 
 Installing a theme with this target removes the `flat` theme, and installing a `flat` theme removes the themes of this
-target. Only the themes shipped with `sylius-starter/themes` support it.
+target. Only the themes shipped with `open-colibri/starter-themes` support it.
 
 ## Your own themes
 

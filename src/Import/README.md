@@ -1,4 +1,4 @@
-# sylius-starter/import
+# open-colibri/starter-import
 
 Castor tasks to import an existing shop catalog into Sylius, with optional AI enrichment: `sylius:import:*`.
 
@@ -7,10 +7,10 @@ Castor tasks to import an existing shop catalog into Sylius, with optional AI en
 In your Castor project:
 
 ```bash
-castor composer require sylius-starter/import
+castor composer require open-colibri/starter-import
 ```
 
-Or install every Sylius Starter package at once with `sylius-starter/sylius-starter`.
+Or install every Colibri Starter package at once with `open-colibri/starter`.
 
 Read the [documentation](https://github.com/open-colibri/colibri-starter/blob/main/docs/import/index.md) for usage.
 

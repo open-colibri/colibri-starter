@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Core\Installer;
+namespace OpenColibri\Starter\Core\Installer;
 
 use Castor\Docker\Installer\AbstractServiceInstaller;
 use Castor\Docker\Installer\Ast\Ast;
@@ -13,14 +13,14 @@ use Castor\Docker\Installer\NeedsDatabase;
 use Castor\Docker\Service\DatabaseServiceInterface;
 use Castor\Docker\Service\PhpMode;
 use Castor\Docker\Service\ServiceInterface;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\EnvFile;
-use SyliusStarter\Core\Service\SyliusService;
-use SyliusStarter\Core\Util\Assets;
-use SyliusStarter\Core\Util\Database;
-use SyliusStarter\Core\Util\Docker;
-use SyliusStarter\Core\Util\Fixtures;
-use SyliusStarter\Core\Util\Symfony;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\EnvFile;
+use OpenColibri\Starter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Util\Assets;
+use OpenColibri\Starter\Core\Util\Database;
+use OpenColibri\Starter\Core\Util\Docker;
+use OpenColibri\Starter\Core\Util\Fixtures;
+use OpenColibri\Starter\Core\Util\Symfony;
 
 use function Castor\context;
 use function Castor\Docker\docker_compose_run;

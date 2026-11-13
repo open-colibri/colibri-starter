@@ -7,8 +7,8 @@ namespace worktree;
 use Castor\Attribute\AsListener;
 use Castor\Attribute\AsTask;
 use Castor\Event\BeforeExecuteTaskEvent;
-use SyliusStarter\Core\App;
-use SyliusStarter\Core\Util\Fixtures;
+use OpenColibri\Starter\Core\App;
+use OpenColibri\Starter\Core\Util\Fixtures;
 
 use function Castor\capture;
 use function Castor\context;

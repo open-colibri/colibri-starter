@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import;
+namespace OpenColibri\Starter\Import;
 
 use function Castor\io;
 
@@ -52,7 +52,7 @@ function download_import_image(string $url, string $host, string $code, bool $qu
         try {
             $client = \Castor\http_client()->withOptions([
                 'timeout' => 30,
-                'headers' => ['User-Agent' => 'sylius-starter-import/1.0'],
+                'headers' => ['User-Agent' => 'colibri-starter-import/1.0'],
             ]);
             $response = $client->request('GET', $url);
 

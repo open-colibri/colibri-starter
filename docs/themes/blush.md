@@ -5,10 +5,8 @@ sidebar:
   order: 4
 ---
 
-Blush adapts the visual language of the
-[JoliCode Sylius Starter](https://jolicode.github.io/sylius-starter/fr/) landing
-page into a storefront: a crisp white canvas, expressive raspberry accents,
-soft rose panels and a deep plum footer.
+Blush is a crisp white canvas with expressive raspberry accents, soft rose panels and a deep
+plum footer.
 
 **Desktop** (1440 px)
 

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Tests\Integration;
+namespace OpenColibri\Starter\Tests\Integration;
 
 use Castor\Attribute\AsTask;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use SyliusStarter\Core\Installer\SyliusInstallerExtensions;
-use SyliusStarter\Core\Service\SyliusService;
-use SyliusStarter\Core\Task\TaskProviderRegistry;
-use SyliusStarter\Themes\Installer\ThemesSyliusInstallerExtension;
+use OpenColibri\Starter\Core\Installer\SyliusInstallerExtensions;
+use OpenColibri\Starter\Core\Service\SyliusService;
+use OpenColibri\Starter\Core\Task\TaskProviderRegistry;
+use OpenColibri\Starter\Themes\Installer\ThemesSyliusInstallerExtension;
 
 /**
  * Every package registers its tasks in the core TaskProviderRegistry from a

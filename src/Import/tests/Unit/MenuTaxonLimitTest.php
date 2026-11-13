@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace SyliusStarter\Import\Tests\Unit;
+namespace OpenColibri\Starter\Import\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
-use function SyliusStarter\Import\limit_menu_taxons;
+use function OpenColibri\Starter\Import\limit_menu_taxons;
 
 final class MenuTaxonLimitTest extends TestCase
 {
