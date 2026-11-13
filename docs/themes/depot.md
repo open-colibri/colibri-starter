@@ -75,7 +75,7 @@ paid on invoice and quotes for volume orders.
 
 The screenshots above show a demo catalog of eighteen trade supplies from a fictional business supplier, in
 six aisles (Office Supplies, Packaging & Shipping, Industrial Equipment, Catering Equipment, Cleaning &
-Hygiene, Workwear & Safety), shipped as the `depot` dataset of `open-colibri/starter-datasets`
+Hygiene, Workwear & Safety), shipped as the `depot` dataset of `opencolibri/starter-datasets`
 (`src/Datasets/datasets/depot/`: `products.yaml`, `collections.yaml`, and in `media/` a photo of each product and of
 each aisle, generated with Ollama on white, like a trade catalogue: the aisle photos become the taxon images
 of the department cards). Products are sold by the pack (a box of 5 reams, a

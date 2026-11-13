@@ -12,10 +12,10 @@ importing a catalog. That makes it a reliable interface for you and for AI agent
 
 Requires [Docker](https://docs.docker.com/get-docker/) with Compose and
 [Castor](https://castor.jolicode.com/getting-started/installation/). Create a new project with the
-[skeleton](https://github.com/open-colibri/starter-skeleton):
+[skeleton](https://github.com/opencolibri/starter-skeleton):
 
 ```bash
-git clone --depth=1 https://github.com/open-colibri/starter-skeleton.git my-shop
+git clone --depth=1 https://github.com/opencolibri/starter-skeleton.git my-shop
 cd my-shop
 rm -rf .git && git init
 
@@ -32,13 +32,13 @@ existing Castor project.
 
 | Command                                                        | Package                  |
 |----------------------------------------------------------------|--------------------------|
-| [`castor sylius:add` / `sylius:remove`](docs/commands/plugins.md) | `open-colibri/starter-plugins` |
-| [`castor sylius:theme:setup`](docs/commands/themes.md)          | `open-colibri/starter-themes`  |
-| [`castor sylius:menu:remove`](docs/commands/admin-menu.md)      | `open-colibri/starter-menu`    |
-| [`castor sylius:import:*`](docs/import/index.md)                | `open-colibri/starter-import`, `open-colibri/starter-datasets` |
-| [`castor sylius:upsun:*`](docs/commands/upsun.md)              | `open-colibri/starter-upsun`   |
+| [`castor sylius:add` / `sylius:remove`](docs/commands/plugins.md) | `opencolibri/starter-plugins` |
+| [`castor sylius:theme:setup`](docs/commands/themes.md)          | `opencolibri/starter-themes`  |
+| [`castor sylius:menu:remove`](docs/commands/admin-menu.md)      | `opencolibri/starter-menu`    |
+| [`castor sylius:import:*`](docs/import/index.md)                | `opencolibri/starter-import`, `opencolibri/starter-datasets` |
+| [`castor sylius:upsun:*`](docs/commands/upsun.md)              | `opencolibri/starter-upsun`   |
 
-Every package relies on `open-colibri/starter-core`; `open-colibri/starter` installs them all. See
+Every package relies on `opencolibri/starter-core`; `opencolibri/starter` installs them all. See
 [Packages](docs/getting-started/packages.md).
 
 | [Canvas](docs/themes/canvas.md) | [Lagoon](docs/themes/lagoon.md) | [Cellar](docs/themes/cellar.md) | [Volt](docs/themes/volt.md) |
@@ -49,7 +49,7 @@ Every package relies on `open-colibri/starter-core`; `open-colibri/starter` inst
 
 ## Documentation
 
-Read it online at [open-colibri.github.io/starter/docs](https://open-colibri.github.io/starter/docs/), or here on GitHub:
+Read it online at [opencolibri.github.io/starter/docs](https://opencolibri.github.io/starter/docs/), or here on GitHub:
 
 - **Getting started**: [Introduction](docs/index.md), [Installation](docs/getting-started/installation.md),
   [Packages](docs/getting-started/packages.md)
@@ -66,7 +66,7 @@ Read it online at [open-colibri.github.io/starter/docs](https://open-colibri.git
 
 ## Contributing
 
-This repository is the development monorepo of every `open-colibri/starter-*` package: each package is split into its own
+This repository is the development monorepo of every `opencolibri/starter-*` package: each package is split into its own
 **read-only** repository by the CI, so issues and pull requests always go here. See
 [Monorepo](docs/contributing/monorepo.md).
 

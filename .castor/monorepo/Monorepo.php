@@ -15,11 +15,11 @@ namespace OpenColibri\Starter\Monorepo;
  */
 final class Monorepo
 {
-    public const string VENDOR = 'open-colibri';
-    public const string PACKAGE_PREFIX = 'open-colibri/starter-';
-    public const string REPOSITORY_OWNER = 'open-colibri';
+    public const string VENDOR = 'opencolibri';
+    public const string PACKAGE_PREFIX = 'opencolibri/starter-';
+    public const string REPOSITORY_OWNER = 'opencolibri';
     public const string NAMESPACE = 'OpenColibri\\Starter';
-    public const string CORE_PACKAGE = 'open-colibri/starter-core';
+    public const string CORE_PACKAGE = 'opencolibri/starter-core';
 
     public function __construct(
         private readonly string $rootDir,
@@ -285,8 +285,8 @@ final class Monorepo
 
     /**
      * Splitsh-lite / git remote URL of a package split repository.
-     * "{name}" is replaced by the package name (open-colibri/starter-core), "{short}" by its short name (core)
-     * and "{repository}" by its GitHub repository (open-colibri/starter-core).
+     * "{name}" is replaced by the package name (opencolibri/starter-core), "{short}" by its short name (core)
+     * and "{repository}" by its GitHub repository (opencolibri/starter-core).
      */
     public static function remoteUrl(string $pattern, string $packageName): string
     {
@@ -298,7 +298,7 @@ final class Monorepo
     }
 
     /**
-     * GitHub repository of a package split, in the open-colibri organization: open-colibri/starter-core.
+     * GitHub repository of a package split, in the opencolibri organization: opencolibri/starter-core.
      */
     public static function repositoryName(string $packageName): string
     {

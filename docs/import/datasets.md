@@ -22,7 +22,7 @@ In a dataset, the `image` of a product or a collection is a path relative to the
 
 ## Ready-made datasets
 
-`open-colibri/starter-datasets` ships ready-made datasets, images included, so a demo shop needs no AI call nor download:
+`opencolibri/starter-datasets` ships ready-made datasets, images included, so a demo shop needs no AI call nor download:
 
 | Dataset        | Catalog                                                       | Suggested theme                           |
 |----------------|---------------------------------------------------------------|-------------------------------------------|

@@ -26,5 +26,5 @@ TaskProviderRegistry::register('my_tasks', static fn (SyliusService $service): i
 ## Installer extensions
 
 A package can also hook into `castor docker:service:install sylius` (extra questions and steps run once Sylius is
-installed) by registering a `SyliusInstallerExtensionInterface` in `SyliusInstallerExtensions`, as `open-colibri/starter-themes` does to ask
+installed) by registering a `SyliusInstallerExtensionInterface` in `SyliusInstallerExtensions`, as `opencolibri/starter-themes` does to ask
 which storefront theme to use.

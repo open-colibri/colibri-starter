@@ -1,6 +1,6 @@
 {
-    "name": "open-colibri/starter",
-    "description": "Colibri Starter: Castor tooling to bootstrap and customize Sylius applications (monorepo of all open-colibri/starter-* packages)",
+    "name": "opencolibri/starter",
+    "description": "Colibri Starter: Castor tooling to bootstrap and customize Sylius applications (monorepo of all opencolibri/starter-* packages)",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -8,7 +8,7 @@
         "castor",
         "starter"
     ],
-    "homepage": "https://github.com/open-colibri/colibri-starter",
+    "homepage": "https://github.com/opencolibri/colibri-starter",
     "authors": [
         {
             "name": "Loïc Frémont",
@@ -32,13 +32,13 @@
         "phpunit/phpunit": "^13.2"
     },
     "replace": {
-        "open-colibri/starter-core": "self.version",
-        "open-colibri/starter-datasets": "self.version",
-        "open-colibri/starter-import": "self.version",
-        "open-colibri/starter-menu": "self.version",
-        "open-colibri/starter-plugins": "self.version",
-        "open-colibri/starter-themes": "self.version",
-        "open-colibri/starter-upsun": "self.version"
+        "opencolibri/starter-core": "self.version",
+        "opencolibri/starter-datasets": "self.version",
+        "opencolibri/starter-import": "self.version",
+        "opencolibri/starter-menu": "self.version",
+        "opencolibri/starter-plugins": "self.version",
+        "opencolibri/starter-themes": "self.version",
+        "opencolibri/starter-upsun": "self.version"
     },
     "suggest": {
         "jolicode/castor-api": "Expose import tasks over HTTP"

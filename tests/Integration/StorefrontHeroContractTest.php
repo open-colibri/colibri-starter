@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Finder\Finder;
 
 /**
- * The homepage hero is a slot owned by open-colibri/starter-core. These checks keep
+ * The homepage hero is a slot owned by opencolibri/starter-core. These checks keep
  * packages from fighting over it again (same template path, same hookable).
  */
 #[CoversNothing]

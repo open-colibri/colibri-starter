@@ -1,5 +1,5 @@
 {
-    "name": "open-colibri/starter-upsun",
+    "name": "opencolibri/starter-upsun",
     "description": "Castor tasks to set up, check and deploy a Sylius application on Upsun",
     "type": "library",
     "license": "MIT",
@@ -8,7 +8,7 @@
         "castor",
         "starter"
     ],
-    "homepage": "https://github.com/open-colibri/colibri-starter",
+    "homepage": "https://github.com/opencolibri/colibri-starter",
     "authors": [
         {
             "name": "Loïc Frémont",
@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=8.3",
-        "open-colibri/starter-core": "self.version",
+        "opencolibri/starter-core": "self.version",
         "symfony/dotenv": "^7.4|^8.0",
         "symfony/process": "^7.4|^8.0",
         "symfony/yaml": "^7.4|^8.0"

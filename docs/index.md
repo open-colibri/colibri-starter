@@ -78,7 +78,7 @@ Browse [all the themes](themes/index.md), by category.
 ## Where to go next
 
 - [Installation](getting-started/installation.md): start a new project, or add Colibri Starter to an existing one.
-- [Packages](getting-started/packages.md): what each `open-colibri/starter-*` package brings.
+- [Packages](getting-started/packages.md): what each `opencolibri/starter-*` package brings.
 - Commands: [plugins](commands/plugins.md), [themes](commands/themes.md), [Admin menu](commands/admin-menu.md),
   [Upsun](commands/upsun.md).
 - [Themes](themes/index.md): every storefront theme, by category, with its screenshots.

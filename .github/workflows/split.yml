@@ -1,7 +1,7 @@
 name: Split packages
 
 # Splits every package of src/ into its own read-only repository
-# (https://github.com/open-colibri/starter-<package>) with splitsh-lite.
+# (https://github.com/opencolibri/starter-<package>) with splitsh-lite.
 #
 # Requires a SPLIT_TOKEN secret: a token allowed to push (contents: write)
 # to every package repository.
@@ -43,7 +43,7 @@ jobs:
     split:
         name: "Split ${{ matrix.package.name }}"
         needs: packages
-        if: github.repository == 'open-colibri/colibri-starter'
+        if: github.repository == 'opencolibri/colibri-starter'
         runs-on: ubuntu-latest
         timeout-minutes: 20
         strategy:

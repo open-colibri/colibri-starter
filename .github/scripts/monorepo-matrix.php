@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 /*
  * Prints the monorepo packages as a JSON list, for GitHub Actions matrices:
- *   [{"name":"open-colibri/starter-core","short":"core","path":"src/Core"}, ...]
+ *   [{"name":"opencolibri/starter-core","short":"core","path":"src/Core"}, ...]
  *
  * Standalone on purpose (no Castor, no Composer install needed).
  */

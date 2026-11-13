@@ -5,23 +5,23 @@ sidebar:
   order: 1
 ---
 
-This repository is the development monorepo of every `open-colibri/starter-*` package. Each package is split into its own
+This repository is the development monorepo of every `opencolibri/starter-*` package. Each package is split into its own
 **read-only** repository by the CI: issues and pull requests always go here.
 
 ## Layout
 
 ```
 src/
-├── Core/              open-colibri/starter-core
+├── Core/              opencolibri/starter-core
 │   ├── composer.json
 │   ├── src/           OpenColibri\Starter\Core\
 │   └── tests/
-├── Plugins/           open-colibri/starter-plugins     (+ resources/)
-├── Themes/            open-colibri/starter-themes      (+ resources/)
-├── Menu/              open-colibri/starter-menu
-├── Datasets/          open-colibri/starter-datasets    (+ datasets/)
-├── Import/            open-colibri/starter-import      (+ resources/)
-└── Upsun/             open-colibri/starter-upsun
+├── Plugins/           opencolibri/starter-plugins     (+ resources/)
+├── Themes/            opencolibri/starter-themes      (+ resources/)
+├── Menu/              opencolibri/starter-menu
+├── Datasets/          opencolibri/starter-datasets    (+ datasets/)
+├── Import/            opencolibri/starter-import      (+ resources/)
+└── Upsun/             opencolibri/starter-upsun
 tests/Integration/     cross-package tests
 .castor/monorepo/      monorepo tooling (castor monorepo:*)
 ```
@@ -44,12 +44,12 @@ castor monorepo:split core themes --push           # push the current branch of 
 castor monorepo:split --ref=refs/tags/v0.1.0 --push
 ```
 
-The remote of each package defaults to `git@github.com:{repository}.git` (`{repository}` = `open-colibri/starter-core`,
-`{name}` = `open-colibri/starter-core`, `{short}` = `core`); override it with `--remote-pattern` or the `SPLIT_REMOTE_PATTERN` environment variable.
+The remote of each package defaults to `git@github.com:{repository}.git` (`{repository}` = `opencolibri/starter-core`,
+`{name}` = `opencolibri/starter-core`, `{short}` = `core`); override it with `--remote-pattern` or the `SPLIT_REMOTE_PATTERN` environment variable.
 
 ## Adding a package
 
-1. Create `src/<Name>/` with `composer.json` (name `open-colibri/starter-<name>`, `OpenColibri\Starter\<Name>\` PSR-4
-   autoload on `src/`, `"open-colibri/starter-core": "self.version"`), a `README.md` and a `LICENSE`.
+1. Create `src/<Name>/` with `composer.json` (name `opencolibri/starter-<name>`, `OpenColibri\Starter\<Name>\` PSR-4
+   autoload on `src/`, `"opencolibri/starter-core": "self.version"`), a `README.md` and a `LICENSE`.
 2. Register its tasks from an autoloaded `src/functions.php` with `TaskProviderRegistry::register()`.
 3. Run `castor monorepo:merge`, then `castor monorepo:validate` and `composer dump-autoload`.

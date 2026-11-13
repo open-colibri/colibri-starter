@@ -1,4 +1,4 @@
-# open-colibri/starter-datasets
+# opencolibri/starter-datasets
 
 Ready-made demo datasets for the Colibri Starter import package: each one is a catalog (`products.yaml`,
 `collections.yaml`) shipped with its images (`media/`) and a `dataset.yaml` (name, description, suggested theme), so a
@@ -27,20 +27,20 @@ demo shop is created from it without any AI call or download.
 In your Castor project:
 
 ```bash
-castor composer require open-colibri/starter-datasets
+castor composer require opencolibri/starter-datasets
 ```
 
-Or install every Colibri Starter package at once with `open-colibri/starter`.
+Or install every Colibri Starter package at once with `opencolibri/starter`.
 
 ```bash
 castor sylius:import:dataset:list
 castor sylius:import:shop:create cellar
 ```
 
-Read the [documentation](https://github.com/open-colibri/colibri-starter/blob/main/docs/import/datasets.md) for usage.
+Read the [documentation](https://github.com/opencolibri/colibri-starter/blob/main/docs/import/datasets.md) for usage.
 
 ## Contributing
 
 This repository is a **read-only split** of the
-[open-colibri/colibri-starter](https://github.com/open-colibri/colibri-starter) monorepo.
+[opencolibri/colibri-starter](https://github.com/opencolibri/colibri-starter) monorepo.
 Please open issues and pull requests there.

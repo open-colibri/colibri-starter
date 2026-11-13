@@ -71,7 +71,7 @@ roast curves are part of the page.
 
 The screenshots above show a demo catalog of sixteen specialty coffees and brewing tools from a fictional roaster, on
 six shelves (Single Origins, Blends, Espresso, Decaf, Brewing, Gifts), shipped as the `roastery` dataset of
-`open-colibri/starter-datasets` (`src/Datasets/datasets/roastery/`: `products.yaml`, `collections.yaml`, and in `media/` a
+`opencolibri/starter-datasets` (`src/Datasets/datasets/roastery/`: `products.yaml`, `collections.yaml`, and in `media/` a
 photo of each item generated with Ollama, on the cream paper and copper of the theme). The single origins are the ones
 of the homepage (Ethiopia Guji and Yirgacheffe, Colombia Huila, Guatemala Antigua, Brazil Cerrado), and descriptions
 carry what a coffee lover looks for: farm, altitude, process, cup notes, roast level out of five and brewing advice.

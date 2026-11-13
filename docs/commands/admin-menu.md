@@ -5,7 +5,7 @@ sidebar:
   order: 3
 ---
 
-Provided by `open-colibri/starter-menu`. Clean up the Sylius Admin panel by removing menu items you don't need.
+Provided by `opencolibri/starter-menu`. Clean up the Sylius Admin panel by removing menu items you don't need.
 
 This command generates `application/src/Menu/Admin/RemoveMenuItemsListener.php`, a Symfony
 event listener that hides matching items from the admin main menu. Subsequent runs

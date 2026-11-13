@@ -46,7 +46,7 @@ class SyliusService extends SymfonyService
             yield $task;
         }
 
-        // Tasks contributed by the installed open-colibri/starter-* packages
+        // Tasks contributed by the installed opencolibri/starter-* packages
         yield from TaskProviderRegistry::tasksFor($this);
 
         yield from $this->tasks;

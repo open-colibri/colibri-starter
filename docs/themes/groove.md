@@ -87,7 +87,7 @@ through the core hero slot replaces the drawn sleeves, with its record still pul
 ## Demo catalog
 
 The screenshots above show a demo catalog of sixteen fictional records in six genres (Jazz, Soul & Funk, Rock,
-Electronic, Hip-Hop, World), shipped as the `groove` dataset of `open-colibri/starter-datasets`
+Electronic, Hip-Hop, World), shipped as the `groove` dataset of `opencolibri/starter-datasets`
 (`src/Datasets/datasets/groove/`: `products.yaml`, `collections.yaml`, and in `media/` the cover of each record: a
 square sleeve generated with Ollama, in the style of its genre and era, from a 1961 hard bop photo to a chicha poster,
 with its title or artist printed on it). Descriptions carry the pressing details: label, catalogue number, weight,

@@ -81,7 +81,7 @@ camping by Frank Zinsli.
 ## Demo catalog
 
 The screenshots above show a demo catalog of eighteen pieces of fictional outdoor gear in six categories (Packs,
-Footwear, Clothing, Climbing, Camping, Accessories), shipped as the `outdoor` dataset of `open-colibri/starter-datasets`
+Footwear, Clothing, Climbing, Camping, Accessories), shipped as the `outdoor` dataset of `opencolibri/starter-datasets`
 (`src/Datasets/datasets/outdoor/`: `products.yaml`, `collections.yaml`, and in `media/` a 3:4 photograph of each
 product out in the mountains, generated with Ollama). Descriptions carry what a hiker or a climber looks for: weight,
 capacity, materials, sizes and certifications. The dataset names no activity of the theme, so it suits any outdoor

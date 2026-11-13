@@ -1,5 +1,5 @@
 {
-    "name": "open-colibri/starter-core",
+    "name": "opencolibri/starter-core",
     "description": "Colibri Starter core: Castor plugin providing the Sylius Docker service, installer and shared utilities",
     "type": "library",
     "license": "MIT",
@@ -8,7 +8,7 @@
         "castor",
         "starter"
     ],
-    "homepage": "https://github.com/open-colibri/colibri-starter",
+    "homepage": "https://github.com/opencolibri/colibri-starter",
     "authors": [
         {
             "name": "Loïc Frémont",

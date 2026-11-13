@@ -486,7 +486,7 @@ function request_openrouter_image_binary(string $prompt): string
     $client = ai_http_client()->withOptions([
         'headers' => [
             'Authorization' => 'Bearer ' . ai_api_key(),
-            'HTTP-Referer' => 'https://github.com/open-colibri/colibri-starter',
+            'HTTP-Referer' => 'https://github.com/opencolibri/colibri-starter',
             'X-Title' => 'Colibri Starter Import',
         ],
     ]);

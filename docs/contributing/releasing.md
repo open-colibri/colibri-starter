@@ -5,14 +5,14 @@ sidebar:
   order: 2
 ---
 
-The [`Split packages`](https://github.com/open-colibri/colibri-starter/blob/main/.github/workflows/split.yml) workflow runs on every push to `main` and on every tag: it builds
+The [`Split packages`](https://github.com/opencolibri/colibri-starter/blob/main/.github/workflows/split.yml) workflow runs on every push to `main` and on every tag: it builds
 a matrix from `castor monorepo:packages --json` and runs `castor monorepo:split <package> --push` for each package.
 
 Requirements:
 
-1. Create one empty repository per package (`open-colibri/starter-core`, `open-colibri/starter-themes`...).
+1. Create one empty repository per package (`opencolibri/starter-core`, `opencolibri/starter-themes`...).
 2. Add a `SPLIT_TOKEN` secret to this repository: a fine-grained personal access token (or a GitHub App token)
    with *Contents: read and write* on the package repositories.
-3. Register the package repositories on Packagist (and this one for `open-colibri/starter`).
+3. Register the package repositories on Packagist (and this one for `opencolibri/starter`).
 
 Tags are split too: tag the monorepo (`git tag v0.1.0 && git push --tags`) and every package receives the same tag.

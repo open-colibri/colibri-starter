@@ -26,7 +26,7 @@ final class TeahouseInstaller implements InstallerInterface
 
     public function description(): ?string
     {
-        return 'https://github.com/open-colibri/colibri-starter/blob/main/docs/themes/teahouse.md';
+        return 'https://github.com/opencolibri/colibri-starter/blob/main/docs/themes/teahouse.md';
     }
 
     public function __invoke(App $app): void
