@@ -2,7 +2,7 @@ name: Publish the documentation
 
 # Asks the website (https://github.com/opencolibri/starter), which builds and serves the documentation
 # website of its docs-site/ folder, to redeploy, so that
-# https://opencolibri.github.io/starter/docs/ follows the docs/ folder of main.
+# https://starter.opencolibri.org/docs/ follows the docs/ folder of main.
 #
 # Requires a DOCS_DISPATCH_TOKEN secret: a token allowed to create repository
 # dispatch events (contents: write) on opencolibri/starter.

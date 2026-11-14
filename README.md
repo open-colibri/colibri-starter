@@ -49,7 +49,7 @@ Every package relies on `opencolibri/starter-core`; `opencolibri/starter` instal
 
 ## Documentation
 
-Read it online at [opencolibri.github.io/starter/docs](https://opencolibri.github.io/starter/docs/), or here on GitHub:
+Read it online at [starter.opencolibri.org/docs](https://starter.opencolibri.org/docs/), or here on GitHub:
 
 - **Getting started**: [Introduction](docs/index.md), [Installation](docs/getting-started/installation.md),
   [Packages](docs/getting-started/packages.md)

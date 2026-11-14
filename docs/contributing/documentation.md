@@ -6,7 +6,7 @@ sidebar:
 ---
 
 The pages of this documentation live in the `docs/` folder of the monorepo. The website that publishes them on
-[opencolibri.github.io/starter/docs](https://opencolibri.github.io/starter/docs/) is built with Astro Starlight
+[starter.opencolibri.org/docs](https://starter.opencolibri.org/docs/) is built with Astro Starlight
 from the `docs-site/` folder of the [opencolibri/starter](https://github.com/opencolibri/starter) website,
 which deploys it under its `/docs/` path and redeploys when `docs/` changes on `main`.
 
@@ -14,7 +14,7 @@ Clone the website next to the monorepo, then serve the pages of your checkout:
 
 ```bash
 git clone git@github.com:opencolibri/starter.git ../starter
-castor docs:up               # http://localhost:4321/starter/docs/, follows the changes of docs/
+castor docs:up               # http://localhost:4321/docs/, follows the changes of docs/
 castor docs:up --port=4322   # on another port
 castor docs:stop
 ```
