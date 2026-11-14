@@ -38,6 +38,8 @@ centered containers) and `mobile` (390x844, emulating a phone: mobile viewport, 
 touch), in both color schemes (`light` and `dark`, through the emulated system preference). The script saves WebP
 screenshots in `docs/images/`, named `<theme>-<page>-<viewport>-<scheme>.webp` (for example
 `canvas-homepage-mobile-dark.webp`, pages `homepage`, `product` and `cart`); theme names use hyphens (`retro-gaming`).
+When both schemes are captured, it also saves `<theme>-homepage-<viewport>-split.webp`: the full light homepage on the
+left half, the dark one on the right half, to show both schemes in one thumbnail.
 Use `--color-schemes dark` to capture one scheme only, `--viewports normal,mobile` to capture some sizes only, or `--width <px>` / `--height <px>` for a single custom desktop
 viewport (saved with a `<width>x<height>` suffix). Use `--base-url <url>` to capture from another storefront URL, or
 `--output-dir <dir>` to choose another output directory. The default storefront is `https://app.test/en_US/` in the main checkout, and the worktree stack (see below) in a git worktree.

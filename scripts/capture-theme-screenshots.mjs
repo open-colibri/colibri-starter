@@ -78,7 +78,9 @@ function printUsage() {
 Capture full-page screenshots of the homepage and of a product page, for each
 screen size and color scheme. Screenshots are saved as
 docs/images/<theme>-<page>-<viewport>-<scheme>.webp, for example
-docs/images/canvas-homepage-mobile-dark.webp.
+docs/images/canvas-homepage-mobile-dark.webp. When both schemes are captured,
+the homepage is also saved as <theme>-homepage-<viewport>-split.webp: the light
+page on the left half, the dark page on the right half.
 
 Screen sizes: ${Object.entries(viewportPresets).map(([name, { width, height }]) => `${name} (${width}x${height})`).join(', ')}.
 Color schemes: ${colorSchemes.join(', ')}.
@@ -411,6 +413,41 @@ async function main() {
       writeFileSync(path, Buffer.from(screenshot.data, 'base64'));
       const pixels = `${Math.round(size.width * pixelRatio * scale)}x${Math.round(size.height * pixelRatio * scale)}`;
       console.log(`${url.href} -> ${path} (${pixels})`);
+      return screenshot.data;
+    };
+
+    // Saves the light screenshot's left half next to the dark screenshot's right half,
+    // split by a neutral line, so that both schemes show in a single thumbnail.
+    const composeSplit = async (light, dark, path) => {
+      // A blank page: the storefront's Content Security Policy may block data: images.
+      const loaded = waitForEvent(events, 'Page.loadEventFired');
+      await send('Page.navigate', { url: 'about:blank' });
+      await loaded;
+      const data = await evaluate(`(async () => {
+        const load = src => new Promise((resolve, reject) => {
+          const image = new Image();
+          image.onload = () => resolve(image);
+          image.onerror = () => reject(new Error('Could not decode a screenshot'));
+          image.src = 'data:image/webp;base64,' + src;
+        });
+        const [light, dark] = await Promise.all([load(${JSON.stringify(light)}), load(${JSON.stringify(dark)})]);
+        // Both schemes share the layout; crop to the smaller one should a page differ by a few pixels.
+        const width = Math.min(light.naturalWidth, dark.naturalWidth);
+        const height = Math.min(light.naturalHeight, dark.naturalHeight);
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const context = canvas.getContext('2d');
+        const split = Math.round(width / 2);
+        context.drawImage(light, 0, 0, split, height, 0, 0, split, height);
+        context.drawImage(dark, split, 0, width - split, height, split, 0, width - split, height);
+        const line = Math.max(2, Math.round(width / 480));
+        context.fillStyle = '#808080';
+        context.fillRect(split - Math.floor(line / 2), 0, line, height);
+        return canvas.toDataURL('image/webp', ${webpQuality / 100}).split(',')[1];
+      })()`, { awaitPromise: true });
+      writeFileSync(path, Buffer.from(data, 'base64'));
+      console.log(`light + dark -> ${path}`);
     };
 
     // Product links of the current page, as absolute URLs, without duplicates.
@@ -501,16 +538,29 @@ async function main() {
     const cartUrl = new URL('cart/', baseUrl);
 
     // The homepage and product page are captured with an empty cart.
+    const homepages = new Map();
     for (const nextScheme of schemes) {
       await useScheme(nextScheme);
       for (const next of viewports) {
         await useViewport(next);
         await navigate(homepageUrl);
-        await capture(homepageUrl, 'homepage');
+        const homepage = await capture(homepageUrl, 'homepage');
+        homepages.set(`${next.name}-${nextScheme}`, homepage);
         await navigate(productUrl);
         await capture(productUrl, 'product');
       }
     }
+
+    if (colorSchemes.every(name => schemes.includes(name))) {
+      for (const next of viewports) {
+        await composeSplit(
+          homepages.get(`${next.name}-light`),
+          homepages.get(`${next.name}-dark`),
+          join(outputDir, `${outputTheme}-homepage-${next.name}-split.webp`),
+        );
+      }
+    }
+    homepages.clear();
 
     if (includeCart) {
       await useViewport(viewports[0]);
@@ -557,7 +607,8 @@ async function main() {
       child.kill('SIGTERM');
       await exited;
     }
-    rmSync(profileDir, { recursive: true, force: true });
+    // Chrome may still flush files into its profile right after exiting: retry instead of failing.
+    rmSync(profileDir, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
   }
 }
 

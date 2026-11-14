@@ -43,7 +43,7 @@ Every package relies on `opencolibri/starter-core`; `opencolibri/starter` instal
 
 | [Canvas](docs/themes/canvas.md) | [Lagoon](docs/themes/lagoon.md) | [Cellar](docs/themes/cellar.md) | [Volt](docs/themes/volt.md) |
 |---|---|---|---|
-| <img src="docs/images/canvas-homepage-normal.webp" alt="Canvas storefront homepage" width="180"> | <img src="docs/images/lagoon-homepage-normal.webp" alt="Lagoon storefront homepage" width="180"> | <img src="docs/images/cellar-homepage-normal.webp" alt="Cellar storefront homepage" width="180"> | <img src="docs/images/volt-homepage-normal.webp" alt="Volt storefront homepage" width="180"> |
+| <img src="docs/images/canvas-homepage-normal-split.webp" alt="Canvas storefront homepage, light and dark schemes" width="180"> | <img src="docs/images/lagoon-homepage-normal-split.webp" alt="Lagoon storefront homepage, light and dark schemes" width="180"> | <img src="docs/images/cellar-homepage-normal-split.webp" alt="Cellar storefront homepage, light and dark schemes" width="180"> | <img src="docs/images/volt-homepage-normal-split.webp" alt="Volt storefront homepage, light and dark schemes" width="180"> |
 
 [All the themes](docs/themes/index.md)
 
