@@ -121,7 +121,7 @@ run `castor up` from a worktree checked out before this setup existed without up
 
 The `docs/` pages are published by the Starlight website of the `docs-site/` folder of opencolibri/starter, cloned
 next to the main checkout (`DOCS_SITE_DIR` otherwise). Preview the `docs/` of the current checkout or worktree with `castor docs:up`
-(http://localhost:4321/starter/docs/, `--port` to change it) and stop it with `castor docs:stop`. One server runs at a time.
+(http://localhost:4321/docs/, `--port` to change it) and stop it with `castor docs:stop`. One server runs at a time.
 See `docs/contributing/documentation.md`.
 
 ## Running commands in the Sylius app
